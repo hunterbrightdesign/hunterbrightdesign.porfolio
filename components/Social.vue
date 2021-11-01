@@ -30,8 +30,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  $color: #f26800;
-  $colorTa: #f2680045;
+  $color: #185a9a;
+  $colorTa: #185a9a45;
 
   .app-social {
     z-index: 1;

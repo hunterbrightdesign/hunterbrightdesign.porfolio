@@ -3,7 +3,7 @@
     <div class="logo">
       <div class="logo--container p-1">
         <NuxtLink :to="localePath('/')">
-          <img src="/logo.webp" alt="LOGO" width="40px" height="40px">
+          <img src="/logo.png" alt="LOGO" width="40px" height="40px">
         </NuxtLink>
       </div>
       <div class="flag--container">
@@ -12,7 +12,7 @@
           <img :src="`/locales/${currentLg.flag}`" :alt="currentLg.label" width="30px" height="30px">
           <div class="animate__animated animate__delay-slow animate__flipInY close-menu text-sm font-thin"><font-awesome-icon :icon="['fa', 'times']" /></div>
         </label>
-        
+
         <NuxtLink v-for="(locale, id) in locales" :key="id" :to="switchLocalePath(locale.code)" :aria-label="locale.label" class="menu-item">
           <img :src="`/locales/${locale.flag}`" :alt="locale.label" width="30px" height="30px">
         </NuxtLink>
@@ -78,7 +78,7 @@ export default {
       if(checkbox.checked){
         checkbox.click()
         this.setCurrentLg()
-      } else if (from.name.slice(-4) !== to.name.slice(-4)) 
+      } else if (from.name.slice(-4) !== to.name.slice(-4))
         this.setCurrentLg()
 
     },
@@ -137,19 +137,20 @@ export default {
   $fg:#e91e63;
   $tColor1: #ccd6f6;
   $tColor2: #8892b0;
-  $color: #f26800;
+  $color: #185a9a;
   $colorTa: #f2680045;
-  $bg: #0a192f;
+  $bg: #050d18;
   $bg--dark: #091320;
   $pi:3.14;
+  $bglogo: #fff;
 
   //config
   $menu-items:4+1;
   $open-distance:60px;
   $opening-angle:$pi;
-  
+
   a{ color:inherit; }
-  
+
   .app-header {
     z-index: 3;
 
@@ -158,15 +159,15 @@ export default {
     .logo {
       display: flex;
       align-items: center;
-      
+
       .logo--container {
         border: solid 1px $color;
-        background-color: $bg--dark;
+        background-color: $bg;
         border-radius: 50%;
         cursor: pointer;
         transition: all .33s ease-in-out;
         z-index: 2;
-  
+
         &:hover {
           transform: scale(1.1);
           filter: brightness(150%);
@@ -227,7 +228,7 @@ export default {
     align-items: center;
     background-color: $bg--dark;
     position: relative;
-    
+
     .menu-open{ display:none; }
 
     .menu-open-button{
@@ -290,7 +291,7 @@ export default {
     transition-timing-function:linear;
     transition-duration:200ms;
     transform:scale(0.8,0.8) translate3d(0,0,0);
-    
+
     img {
       display: none;
     }
@@ -304,7 +305,7 @@ export default {
     transition-timing-function:cubic-bezier(0.935, 0.000, 0.340, 1.330);
     @for $i from 1 through $menu-items{
       $angle:(($pi - $opening-angle)/2)+(($opening-angle/($menu-items - 1))*($i - 1));
-      
+
       &:nth-child(#{$i+2}){
         transition-duration:80ms+(100ms*$i);
         transform:translate3d(cos($angle)*$open-distance,sin($angle)*$open-distance,0);

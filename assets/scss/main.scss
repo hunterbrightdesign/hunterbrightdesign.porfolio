@@ -9,10 +9,10 @@
 
 $tColor1: #ccd6f6;
 $tColor2: #8892b0;
-$color: #f26800;
-$colorTa: #f2680045;
-$colorTa2: #f2680066;
-$bg: #0a192f;
+$color: #185a9a;
+$colorTa: #185a9a45;
+$colorTa2: #185a9a66;
+$bg: #020202;
 $bg--dark: #091320;
 
 *,
@@ -40,8 +40,8 @@ html, body {
   }
 }
 
-.page-enter-active { animation: acrossIn .4s ease-out both; } 
-.page-leave-active { animation: acrossOut .6s ease-in both; } 
+.page-enter-active { animation: acrossIn .4s ease-out both; }
+.page-leave-active { animation: acrossOut .6s ease-in both; }
 @keyframes acrossIn {
   0% {
     transform: translate3d(-20%, 0, 0);

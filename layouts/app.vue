@@ -24,7 +24,7 @@ export default {
   $bg--dark: #091320;
   $tablet: 768px;
   $mobile: 640px;
-  
+
   .page--container {
     position: absolute;
     bottom: 0;
@@ -45,7 +45,7 @@ export default {
     }
 
     &::-webkit-scrollbar-track {
-      
+
       background: $bg !important;
       border-radius: 0.5rem;
     }
@@ -60,7 +60,7 @@ export default {
       max-height: 100%;
     }
   }
-  
+
   @media (max-width: $tablet) {
     .page--content {
       width: 70vw !important;

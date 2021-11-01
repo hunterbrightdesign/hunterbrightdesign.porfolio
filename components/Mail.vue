@@ -9,7 +9,7 @@
 export default {
   data () {
     return {
-      mail: 'bpsmartdesign@hotmail.com'
+      mail: 'hunterbrightdesign@gmail.com'
     }
   }
 }
@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
   $tColor1: #ccd6f6;
-  $color: #f26800;
+  $color: #185a9a;
   $colorTa: #f2680045;
 
   .app-mail {
