@@ -1,7 +1,7 @@
 <template>
   <div class="contact--container">
     <h4 class="subtitle uTxt my-3">
-      <span class="text-base uTxt font-thin">04.</span> 
+      <span class="text-base uTxt font-thin">04.</span>
       What's next ?
     </h4>
     <h3 class="font-black text-4xl md:text-6xl cTitle text-center">Get in touch</h3>
@@ -21,12 +21,12 @@ export default {
   layout: 'app',
   data () {
     return {
-      mail: 'bpsmartdesign@hotmail.com'
+      mail: 'hunterbrightdesign@hotmail.com'
     }
   },
   head() {
     return {
-      title: `Bpsmartdesign Portfolio-V2 | ${this.$t('menu.contact')}`,
+      title: `hunterbrightdesign Portfolio-V2 | ${this.$t('menu.contact')}`,
       meta: [
         {
           hid: 'description',

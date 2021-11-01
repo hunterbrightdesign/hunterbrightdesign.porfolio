@@ -122,7 +122,7 @@ export default {
   },
   head() {
     return {
-      title: `Bpsmartdesign Portfolio-V2 | ${this.$t('menu.skills')}`,
+      title: `hunterbrightdesign Portfolio-V2 | ${this.$t('menu.skills')}`,
       meta: [
         {
           hid: 'description',
@@ -142,7 +142,7 @@ export default {
   $bg--dark: #091320;
   $colorTa: #f2680045;
 
-  .skill--container {    
+  .skill--container {
     .work--timeline {
       .wt--container {
         max-height: 60vh;
@@ -165,7 +165,7 @@ export default {
           justify-content: space-between;
           margin: 3vh 0;
           position: relative;
-  
+
           .wti--desc {
             width: 85%;
             border-radius: .2rem .9rem .2rem .2rem;
@@ -177,7 +177,7 @@ export default {
             overflow: hidden;
             position: relative;
             // height: 200px;
-            
+
             .wtid--content {
               padding: 1rem;
               width: 80%;
@@ -208,7 +208,7 @@ export default {
 
             }
           }
-  
+
           .wti--icon {
             width: 7vh; height: 7vh;
             border-radius: 50%;
@@ -246,7 +246,7 @@ export default {
               top: 50%;
             }
           }
-  
+
           &:nth-child(2n + 1) {
             flex-direction: row-reverse;
 

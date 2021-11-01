@@ -1,21 +1,32 @@
 {
   "menu": {
-    "about": "Sobre",
-    "skills": "Habilidades",
-    "works": "Obras",
-    "contact": "Contactar",
-    "resume": "Reanudar"
+    "about": "Auf",
+    "skills": "Fähigkeiten",
+    "works": "Theaterstücke",
+    "contact": "Kontakt",
+    "resume": "Lebenslauf"
   },
   "home": {
-    "introduction": "Hola, mi nombre es",
-    "description": "Construyo una aplicación web y móvil.",
-    "me": "Yo soy",
-    "profession": "Ingeniero de software",
-    "text-1": "especializada en el diseño y producción de soluciones escalables y fáciles de mantener para la web y dispositivos móviles (...) más particularmente herramientas",
-    "text-2": "tanto para particulares como para pequeñas o grandes empresas.",
-    "evidence-1": "innovador",
-    "evidence-2": "intuitivo",
-    "and": "y",
-    "contact": "Ponerse en contacto"
+    "introduction": "Hallo Ich heisse",
+    "description": "Ich baue eine Web- und mobile Anwendung.",
+    "me": "ich bin",
+    "profession": "Softwareentwickler",
+    "text-1": "spezialisiert auf das Design und die Produktion von skalierbaren und wartungsfreundlichen Lösungen für das Web und mobile Geräte (...) insbesondere Tools",
+    "text-2": "sowohl für Einzelpersonen als auch für kleine oder große Unternehmen.",
+    "evidence-1": "innovativ",
+    "evidence-2": "intuitiv",
+    "and": "und",
+    "contact": "In Kontakt kommen"
+  },
+  "about": {
+    "title":"Wer ist dieser Kerl? ",
+    "introduction": "Hallo Ich heisse",
+    "description": " bin Software-Ingenieur und gelegentlich Designer. Meine Leidenschaft für das Web stammt aus meinem ersten Studienjahr 2012, als ich Javascript entdeckte.",
+    "text-1": "Seitdem habe ich nicht gezögert, ultramoderne und skalierbare Plattformen und Anwendungen durch die verschiedenen Technologien, die mein Profil ausmachen, zu entdecken, zu entwerfen und zu bauen.",
+    "text-2": "Unter den wichtigsten sind:",
+    "evidence-1": "Innovatoren",
+    "evidence-2": "intuitiv",
+    "and": "et",
+    "contact": "Kontaktierte mich"
   }
 }

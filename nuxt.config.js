@@ -65,6 +65,7 @@ export default {
       { name: 'Français', code: 'fr', iso: 'fr-FR', file: 'fr.json', dir: 'ltr' },
       { name: 'allemand', code: 'de', iso: 'de-DU', file: 'de.json', dir: 'ltr' },
       { name: 'русский', code: 'ru', iso: 'ru-RU', file: 'ru.json', dir: 'ltr' },
+
     ],
     defaultLocale: 'en',
     detectBrowserLanguage: {

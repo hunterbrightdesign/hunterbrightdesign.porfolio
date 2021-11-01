@@ -17,5 +17,16 @@
     "evidence-2": "intuitive",
     "and": "and",
     "contact": "Get in touch"
+  },
+  "about": {
+    "title":"Who is this guy",
+    "introduction": "Hello!, My name is",
+    "description": " am a software Engineer and occasionally a designer. My passion for the web dates from my first year of university in 2012 when I discovered javascript.",
+    "text-1": "Since then, I have not hesitated to discover, design and build ultra modern and scalable platforms and applications through the multiple technologies that make up my profile.",
+    "text-2": "Among which the main ones are :",
+    "evidence-1": "innovative",
+    "evidence-2": "intuitive",
+    "and": "and",
+    "contact": "Contact me"
   }
 }

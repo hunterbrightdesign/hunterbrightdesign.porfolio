@@ -11,9 +11,10 @@ $tColor1: #ccd6f6;
 $tColor2: #8892b0;
 $color: #185a9a;
 $colorTa: #185a9a45;
-$colorTa2: #185a9a66;
+$colorTa2: #185a9a;
 $bg: #020202;
 $bg--dark: #091320;
+$colortx:#7e47ff;
 
 *,
 *:before,
@@ -85,6 +86,7 @@ html, body {
 .uTxt { color: $color; }
 .wTxt { color: $tColor1; }
 .uTxtTa { color: $colorTa; }
+.uTxtPf { color: $colortx; }
 .uTxtTa2 { color: $colorTa2; }
 .cTitle { color: $tColor1; }
 .big-title { line-height: 1.1; }

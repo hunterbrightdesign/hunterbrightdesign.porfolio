@@ -1,23 +1,23 @@
 <template>
   <div class="about--container flex items-center justify-center flex-wrap content-center py-6 lg:flex lg:flex-nowrap">
     <div class="about--text w-full lg:mr-10 lg:w-3/4">
-      <MainTitle title="Who is this guy ?" num="0.1" />
+    <div class="uTxt">0.1
+      <span class="font-black text-5xl wTxt">{{ $t('about.title') }}</span>
+    </div>
       <p>
-        Hello!, My name is <span class="uTxtTa deco">BIYA Paul,</span> am a software Engineer and occasionally a designer. My passion for the web dates from my first year of university in 2012 when I discovered javascript.
+         {{ $t('about.introduction') }} <span class="uTxtPf deco">Fokoui Marco,</span> {{ $t('about.description') }}
       </p>
+      <p> {{ $t('about.text-1') }} </p>
       <p>
-        Since then, I have not hesitated to discover, design and build ultra modern and scalable platforms and applications through the multiple technologies that make up my profile.
-      </p>
-      <p>
-        Among which the main ones are :
+        {{ $t('about.text-2') }}
       </p>
       <ul class="list--tech list-inside">
-        <li v-for="tech in mainTechno" :key="tech.id"><a class="ml-4" :href="tech.uri" target="blank"><span class="deco uTxtTa">{{tech.name}}</span></a></li>
+        <li v-for="tech in mainTechno" :key="tech.id"><a class="ml-4" :href="tech.uri" target="blank"><span class="deco uTxtPf">{{tech.name}}</span></a></li>
       </ul>
     </div>
     <div class="mt-12 w-full flex flex-nowrap items-center lg:w-1/3">
       <div class="about--detail w-2/3 lg:w-full max-w-xs ">
-        <img src="/me.webp" alt="bpsmartdesign" min-width="250px" min-height="250px" class="shadow-2xl">
+        <img src="/profile.webp" alt="hunterbrightdesign" min-width="250px" min-height="250px" class="shadow-2xl">
       </div>
     </div>
   </div>
@@ -31,16 +31,18 @@ export default {
       mainTechno: [
         {name: 'Javascript (Es6 +)', uri: 'https://www.javascript.com/'},
         {name: 'Vue Js', uri: 'https://vuejs.org/'},
-        {name: 'React', uri: 'https://reactjs.org/'},
-        {name:  'TypeScript', uri: 'https://www.typescriptlang.org/'},
+        {name: 'Php (7 +)', uri: 'https://www.javascript.com/'},
         {name: 'Laravel', uri: 'https://laravel.com/'},
+        {name: 'Python', uri: 'https://python.org/'},
+        {name:  'Django', uri: 'https://www.djangoproject.com/'},
+        {name:  'Nuxtjs', uri: 'https://nuxtjs.org/'},
         {name: 'Node Js', uri: 'https://nodejs.org/'},
       ],
     }
   },
   head() {
     return {
-      title: `Bpsmartdesign Portfolio-V2 | ${this.$t('menu.about')}`,
+      title: `hunterbrightdesign Portfolio-V2 | ${this.$t('menu.about')}`,
       meta: [
         {
           hid: 'description',
@@ -55,8 +57,8 @@ export default {
 
 <style lang="scss" scoped>
   $tColor1: #ccd6f6;
-  $color: #f26800;
-  $colorTa: #f2680045;
+  $color: #185a9a;
+  $colorTa: #185a9a45;
   .about--container {
     .about--text {
       p { margin: 25px 0; }

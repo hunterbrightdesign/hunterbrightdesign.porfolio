@@ -62,7 +62,7 @@ export default {
         { code: 'en', label: 'English', flag: 'usa.svg', active: false },
         { code: 'fr', label: 'Français', flag: 'france.svg', active: false },
         { code: 'de', label: 'allemand', flag: 'de.svg', active: false },
-        { code: 'DE', label: 'русский', flag: 'ru.svg', active: false },
+        { code: 'ru', label: 'русский', flag: 'ru.svg', active: false },
       ],
       locales: undefined,
       currentLg: undefined,

@@ -15,7 +15,7 @@
               <ul class="text-xs font-thin uTxtTa2 list">
                 <li v-for="tag in work.keyword" :key="tag.id" class="deco">{{tag}}</li>
               </ul>
-            </div>         
+            </div>
           </div>
           <div class="wi--details animate__animated animate__delay-slow animate__flipInY">
             <div class="wid--container p-3 font-thin text-base">
@@ -29,7 +29,7 @@
           <ul class="wic--links mb-4">
             <li class="text-sm mr-3"> <a :href="work.uri"><font-awesome-icon :icon="['fa', 'external-link-alt']" /></a> </li>
             <li class="text-sm"> <a :href="work.github"><font-awesome-icon :icon="['fab', 'github']" /></a> </li>
-          </ul> 
+          </ul>
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@ export default {
   },
   head() {
     return {
-      title: `Bpsmartdesign Portfolio-V2 | ${this.$t('menu.work')}`,
+      title: `hunterbrightdesign Portfolio-V2 | ${this.$t('menu.work')}`,
       meta: [
         {
           hid: 'description',
