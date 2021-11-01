@@ -18,11 +18,11 @@ export default {
   data () {
     return {
       socials: [
-        { label: 'Github', icon: 'github', uri: 'https://github.com/bpsmartdesign' },
-        { label: 'LinkedIn', icon: 'linkedin', uri: 'https://www.linkedin.com/in/bpsmartdesign/' },
-        { label: 'Twitter', icon: 'twitter', uri: 'https://twitter.com/bpsmartdesign' },
-        { label: 'Codepen', icon: 'codepen', uri: 'https://codepen.io/bpsmartdesign' },
-        { label: 'Dribbble', icon: 'dribbble', uri: 'https://dribbble.com/bpsmartdesign' },
+        { label: 'Github', icon: 'github', uri: 'https://github.com/hunterbrightdesign' },
+        { label: 'LinkedIn', icon: 'linkedin', uri: 'https://www.linkedin.com/in/hunterbrightdesign' },
+        { label: 'Telegram', icon: 'telegram-plane', uri: 'https://t.me/hunterbrightdesignIT' },
+        { label: 'Codepen', icon: 'codepen', uri: 'https://codepen.io/hunterbrightdesign' },
+        { label: 'Whatsapp', icon: 'whatsapp', uri: 'https://wa.me/237697040726' },
       ]
     }
   }

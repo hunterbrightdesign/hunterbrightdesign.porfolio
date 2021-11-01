@@ -43,7 +43,7 @@
       </div>
     </div>
     <div id="cv" class="cv--container" @click.self="closeCv">
-      <embed id="embed" src="/cv_en.pdf" class="cv--content animate__animated animate__flipInY" type="application/pdf" width="624" height="877">
+      <embed id="embed" src="/cv_hunter_fr.pdf" class="cv--content animate__animated animate__flipInY" type="application/pdf" width="624" height="877">
     </div>
   </div>
 </template>
@@ -61,8 +61,8 @@ export default {
       allLocales: [
         { code: 'en', label: 'English', flag: 'usa.svg', active: false },
         { code: 'fr', label: 'Français', flag: 'france.svg', active: false },
-        { code: 'es', label: 'Español', flag: 'spain.svg', active: false },
-        { code: 'ru', label: 'русский', flag: 'ru.svg', active: false },
+        { code: 'de', label: 'allemand', flag: 'de.svg', active: false },
+        { code: 'DE', label: 'русский', flag: 'ru.svg', active: false },
       ],
       locales: undefined,
       currentLg: undefined,
