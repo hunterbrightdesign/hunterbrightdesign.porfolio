@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'JosefinSlab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Josefin Slab'), local('Josefin-Slab'),
+       url('../fonts/JosefinSlab.ttf') format('truetype');
+}
+
+$tColor1: #ccd6f6;
+$tColor2: #8892b0;
+$color: #f26800;
+$colorTa: #f2680045;
+$colorTa2: #f2680066;
+$bg: #0a192f;
+$bg--dark: #091320;
+
+*,
+*:before,
+*:after {
+  transition: all 0.33s cubic-bezier(0.6, 2, 0.4, 1);
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.list {
+  display: flex;
+
+  li {
+    margin-right: .5rem;
+  }
+}
+
+.page-enter-active { animation: acrossIn .4s ease-out both; } 
+.page-leave-active { animation: acrossOut .6s ease-in both; } 
+@keyframes acrossIn {
+  0% {
+    transform: translate3d(-20%, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes acrossOut {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: .7;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(40%, 0, 0);
+  }
+}
+
+.bp-btn {
+  border: solid 1px $color;
+  border-radius: .25rem;
+  color: $color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $colorTa;
+  }
+}
+.deco {
+  cursor: pointer;
+  background: linear-gradient(currentColor 0 0) 0 100% /var(--d, 0) 1px no-repeat;
+  transition:0.5s;
+  &:hover {
+    color: $color;
+    --d: 100%;
+  }
+}
+.uTxt { color: $color; }
+.wTxt { color: $tColor1; }
+.uTxtTa { color: $colorTa; }
+.uTxtTa2 { color: $colorTa2; }
+.cTitle { color: $tColor1; }
+.big-title { line-height: 1.1; }
+.filter--bg { filter: invert(8%) sepia(42%) saturate(2197%) hue-rotate(193deg) brightness(86%) contrast(96%); }
+.filter--pColor { filter: invert(58%) sepia(60%) saturate(5565%) hue-rotate(3deg) brightness(96%) contrast(102%); }
+
+.app-container {
+  background-color: $bg;
+  color: $tColor2;
+  font-family: "JosefinSlab";
+}
