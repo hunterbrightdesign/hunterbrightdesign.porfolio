@@ -1,8 +1,8 @@
 <template>
   <div class="about--container flex items-center justify-center flex-wrap content-center py-6 lg:flex lg:flex-nowrap">
-    <div class="about--text w-full lg:mr-10 lg:w-3/4">
+    <div class="about--text w-full lg:mr-10 lg:w-3/4 font-semibold">
     <div class="uTxt">0.1
-      <span class="font-black text-5xl wTxt ">{{ $t('about.title') }}</span>
+      <span class="font-black text-5xl uTxt ">{{ $t('about.title') }}</span><span class="divine-y-0"></span>
     </div>
       <p>
          {{ $t('about.introduction') }} <span class="uTxtPf deco">Fokoui Marco,</span> {{ $t('about.description') }}

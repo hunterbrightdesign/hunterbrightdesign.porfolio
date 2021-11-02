@@ -13,7 +13,7 @@
           <div class="animate__animated animate__delay-slow animate__flipInY close-menu text-sm font-thin"><font-awesome-icon :icon="['fa', 'times']" /></div>
         </label>
 
-        <NuxtLink v-for="(locale, id) in locales" :key="id" :to="switchLocalePath(locale.code)" :aria-label="locale.label" class="menu-item">
+        <NuxtLink v-for="(locale, id) in locales" :key="id" :to="switchLocalePath(locale.code)" :aria-label="locale.label" class="menu-item ">
           <img :src="`/locales/${locale.flag}`" :alt="locale.label" width="30px" height="30px">
         </NuxtLink>
       </div>
@@ -23,7 +23,7 @@
         <li v-for="(link, id) in links" :key="id" class="mr-6"  :class="link.active === true && 'active'">
           <NuxtLink :to="localePath(link.uri)" class="font-medium">
             <span class="uTxt font-bold text-xs">{{ `0${id + 1}.` }}</span>
-            <span class="deco">{{ $t(link.label) }}</span>
+            <span class="deco font-bold">{{ $t(link.label) }}</span>
           </NuxtLink>
         </li>
         <li class="bp-btn px-3 py-2 uTxt" @click="showCv">{{ $t('menu.resume') }}</li>
@@ -35,7 +35,7 @@
           <li v-for="(link, id) in links" :key="id" class="my-4 text-4xl"  :class="link.active === true && 'active'">
             <NuxtLink :to="localePath(link.uri)" class="font-medium">
               <span class="uTxt font-bold text-xs">{{ `0${id + 1}.` }}</span>
-              <span class="deco">{{ $t(link.label) }}</span>
+              <span class="deco ">{{ $t(link.label) }}</span>
             </NuxtLink>
           </li>
           <li class="bp-btn px-3 py-2 uTxt mt-10" @click="showCv">{{ $t('menu.resume') }}</li>
@@ -135,7 +135,7 @@ export default {
 
   //vars
   $fg:#e91e63;
-  $tColor1: #ccd6f6;
+  $tColor1: #0b1c43;
   $tColor2: #8892b0;
   $color: #185a9a;
   $colorTa: #f2680045;

@@ -30,8 +30,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  $colorTa: #185a9a;
   $color: #185a9a;
-  $colorTa: #185a9a45;
+  $colorovsocial:#185a9a45;
 
   .app-social {
     z-index: 1;
@@ -44,10 +45,11 @@ export default {
 
       .asl--uri {
         display: inline-block;
+        color: $color;
 
         &:hover {
           transform: scale(1.5);
-          color: $color;
+          color: $colorovsocial;
         }
       }
     }
