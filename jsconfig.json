@@ -1,0 +1,13 @@
+{
+  "Options du compilateur" : {
+    "baseUrl" : "." ,
+    "chemins" : {
+      "~/*" : [ "./*" ] ,
+      "@/*" : [ "./*" ] ,
+      "~~/*" : [ "./*" ] ,
+      "@@/*" : [ "./*" ]
+    }
+  } ,
+  "exclude" : [ "node_modules" ,  ".nuxt" ,  "dist" ]
+}
+
