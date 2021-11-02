@@ -20,7 +20,7 @@ export default {
       socials: [
         { label: 'Github', icon: 'github', uri: 'https://github.com/hunterbrightdesign' },
         { label: 'LinkedIn', icon: 'linkedin', uri: 'https://www.linkedin.com/in/hunterbrightdesign' },
-        { label: 'Telegram', icon: 'telegram-plane', uri: 'https://t.me/hunterbrightdesignIT' },
+        { label: 'Telegram', icon: 'telegram-plane', uri: 'https://t.me/hunterbrightdesign' },
         { label: 'Codepen', icon: 'codepen', uri: 'https://codepen.io/hunterbrightdesign' },
         { label: 'Whatsapp', icon: 'whatsapp', uri: 'https://wa.me/237697040726' },
       ]

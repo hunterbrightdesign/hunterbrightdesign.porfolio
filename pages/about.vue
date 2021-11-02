@@ -2,7 +2,7 @@
   <div class="about--container flex items-center justify-center flex-wrap content-center py-6 lg:flex lg:flex-nowrap">
     <div class="about--text w-full lg:mr-10 lg:w-3/4">
     <div class="uTxt">0.1
-      <span class="font-black text-5xl wTxt">{{ $t('about.title') }}</span>
+      <span class="font-black text-5xl wTxt ">{{ $t('about.title') }}</span>
     </div>
       <p>
          {{ $t('about.introduction') }} <span class="uTxtPf deco">Fokoui Marco,</span> {{ $t('about.description') }}
@@ -32,9 +32,9 @@ export default {
         {name: 'Javascript (Es6 +)', uri: 'https://www.javascript.com/'},
         {name: 'Vue Js', uri: 'https://vuejs.org/'},
         {name: 'Php (7 +)', uri: 'https://www.javascript.com/'},
-        {name: 'Laravel', uri: 'https://laravel.com/'},
-        {name: 'Python', uri: 'https://python.org/'},
-        {name:  'Django', uri: 'https://www.djangoproject.com/'},
+        {name: 'Laravel(6 7 8+)', uri: 'https://laravel.com/'},
+        {name: 'Postgresql', uri: 'https://www.postgresql.org/'},
+        {name:  'Mysql', uri: 'https://www.mysql.com/'},
         {name:  'Nuxtjs', uri: 'https://nuxtjs.org/'},
         {name: 'Node Js', uri: 'https://nodejs.org/'},
       ],

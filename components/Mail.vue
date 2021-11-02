@@ -1,6 +1,6 @@
 <template>
   <div class="app-mail fixed hidden sm:flex flex-col items-center justify-between mx-12">
-      <p class="mail-content uTxt text-base"><a :href="`mailto:${mail}?subject= Contact from : Portfolio V2`">{{ mail }}</a></p>
+      <p class="mail-content uTxt text-base font-bold text-lg"><a :href="`mailto:${mail}?subject= Contact from : Portfolio V2`">{{ mail }}</a></p>
     <div class="mail--line mt-4"></div>
   </div>
 </template>
