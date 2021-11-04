@@ -19,8 +19,8 @@ export default {
 
 <style lang="scss" scoped>
   $tColor1: #ccd6f6;
-  $color: #f26800;
-  $colorTa: #f2680045;
+  $color: #185a9a;
+  $colorTa: #185a9a;
 
   .main--title {
     position: relative;

@@ -1,9 +1,7 @@
 <template>
   <div class="about--container flex items-center justify-center flex-wrap content-center py-6 lg:flex lg:flex-nowrap">
     <div class="about--text w-full lg:mr-10 lg:w-3/4 font-semibold">
-    <div class="uTxt">0.1
-      <span class="font-black text-5xl uTxt ">{{ $t('about.title') }}</span><span class="divine-y-0"></span>
-    </div>
+      <MainTitle :title="$t('about.title')" num="0.1" />
       <p>
          {{ $t('about.introduction') }} <span class="uTxtPf deco">Fokoui Marco,</span> {{ $t('about.description') }}
       </p>
@@ -35,6 +33,7 @@ export default {
         {name: 'Laravel(6 7 8+)', uri: 'https://laravel.com/'},
         {name: 'Postgresql', uri: 'https://www.postgresql.org/'},
         {name:  'Mysql', uri: 'https://www.mysql.com/'},
+        {name:  'Sqlite', uri: 'https://www.sqlite.org/'},
         {name:  'Nuxtjs', uri: 'https://nuxtjs.org/'},
         {name: 'Node Js', uri: 'https://nodejs.org/'},
       ],

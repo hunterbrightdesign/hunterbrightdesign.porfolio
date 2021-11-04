@@ -139,7 +139,7 @@ export default {
   $tColor2: #8892b0;
   $color: #185a9a;
   $colorTa: #f2680045;
-  $bg: #050d18;
+  $bg: #dedcdc;
   $bg--dark: #091320;
   $pi:3.14;
   $bglogo: #fff;

@@ -3,7 +3,8 @@
     <div class="work--timeline lg:mr-10 w-full lg:w-3/4">
       <MainTitle title="Work history & Skills" num="0.2" />
       <div class="wt--container">
-        <div v-for="exp in experiences" :key="exp.id" class="wt--item">
+        <div v-for="exp in $t('skills.experiences')" :key="exp.id" class="wt--item">
+         <!-- {{ $t('skills.experiences') }} -->
           <div class="wti--desc">
             <div class="wtid--content">
               <h3 :style="{ color: exp.color}">{{ exp.role }}</h3>
@@ -25,8 +26,8 @@
       </div>
     </div>
     <div class="skill--list w-full lg:w-1/4">
-      <div v-for="skill in skills" :key="skill.id" class="sl--item font-thin text-sm">
-        <a :href="skill.uri" target="blank" class="">{{ skill.elt}}</a>
+      <div v-for="skill in skills" :key="skill.id" class="sl--item font-thin text-sm font-bold text-1xl">
+        <a :href="skill.uri" target="blank " class="">{{ skill.elt}}</a>
         <div class="sl--value" :style="{ width: skill.value}"></div>
       </div>
     </div>
@@ -40,17 +41,6 @@ export default {
     return {
       experiences: [
         {
-          enterprise: 'Workerly',
-          logo: '/enterprises_logo/workerly.webp',
-          uri: '#',
-          tags: ['React', 'Typescript', 'Umi Js', 'Ant Design', 'Slack', 'Jira'],
-          role: 'Software Engineer',
-          color: '#3c64ac',
-          colorTa: '#3c64ac80',
-          description: 'Member of the Front-end Developer team, responsible for the design & production of the required components',
-          from: 'September 2021',
-          to: 'Now'
-        }, {
           enterprise: 'Mayem solutions',
           logo: '/enterprises_logo/mayem_solutions.webp',
           uri: 'https://mayem-solutions.com/',
@@ -108,15 +98,15 @@ export default {
         },
       ],
       skills: [
-        { elt: 'Vue Js', value: '91%', uri: 'https://vuejs.org/' },
-        { elt: 'React', value: '72%', uri: 'https://reactjs.org/' },
+        { elt: 'Laravel(6 7 8+)', value: '90%', uri: 'https://laravel.com/' },
+        { elt: 'php (8+)', value: '95%', uri: 'https://www.php.org/' },
+        { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: '#' },
+        { elt: 'Vue Js', value: '60%', uri: 'https://vuejs.org/' },
+        { elt: 'Nuxtjs', value: '60%', uri: 'https://nuxtjs.org/' },
         { elt: 'Node Js', value: '45%', uri: 'https://nodejs.org/' },
-        { elt: 'Laravel', value: '87%', uri: 'https://laravel.com/' },
-        { elt: 'Javascript Es6+', value: '96%', uri: 'https://www.javascript.com/' },
-        { elt: 'Typescript', value: '78%', uri: 'https://www.typescriptlang.org/' },
+        { elt: 'Javascript Es6+', value: '80%', uri: 'https://www.javascript.com/' },
+        { elt: 'Git / Github ', value: '87%', uri: '#' },
         { elt: 'Wordpress', value: '98%', uri: 'https://wordpress.com/' },
-        { elt: 'Git / Github / Gitlab / Heroku', value: '87%', uri: '#' },
-        { elt: 'Flutter / React Native', value: '41%', uri: '#' },
       ]
     }
   },
@@ -137,10 +127,10 @@ export default {
 
 <style lang="scss" scoped>
   $tColor1: #ccd6f6;
-  $tColor2: #8892b0;
-  $color: #f26800;
+  $tColor2: #28375f;
+  $color: #185a9a;
   $bg--dark: #091320;
-  $colorTa: #f2680045;
+  $colorTa: #28375f;
 
   .skill--container {
     .work--timeline {
