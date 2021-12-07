@@ -45,5 +45,12 @@ export default {
       margin-left: 25px;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .main--title{
+
+      font-size: 1em !important;
+    }
+  }
 </style>
 

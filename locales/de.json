@@ -30,62 +30,62 @@
     "contact": "Kontaktierte mich"
   },
   "skills":{
-
+    "title":"Beruflicher Werdegang & Qualifikationen",
     "experiences": [
       {
-        "enterprise": "Mayem solutions",
-        "logo": "/enterprises_logo/mayem_solutions.webp",
-        "uri": "https://mayem-solutions.com/",
-        "tags": ["VueJs", "Laravel", "Postgre", "Element_UI", "Trello", "Gitlab", "Flutter"],
-        "role": "Fullstack Web & Mobile developper",
+        "enterprise": "Bridge africa",
+        "logo": "/enterprises_logo/Bridge_africa.webp",
+        "uri": "https://bridgeafricaventures.com/fr",
+        "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
+        "role": "Backend-Web & Mobile-Entwickler",
         "color": "#fdb91f",
         "colorTa": "#fdb91f80",
-        "description": "Fullstack web & mobile developer, technical manager of IT projects",
-        "from": "Febuary 2021",
-        "to": "July 2021"
+        "description": "backend, technischer Leiter von IT-Projekten",
+        "from": "September 2021",
+        "to": "Jetzt"
       }, {
-        "enterprise": "Stratochange",
-        "logo": "/enterprises_logo/stratochange.webp",
-        "uri": "http://stratochange-001-site4.btempurl.com/",
-        "tags": ["VueJs", "Tailwind", "Javascript Es6 +", "Vuetify", "NuxtJs"],
-        "role": "Front End Developper",
-        "color": "#0367b5",
-        "colorTa": "#0367b580",
-        "description": "Front end team leader, responsible for the design and implementation of interfaces and graphic components",
+        "enterprise": "Opetel",
+        "logo": "/enterprises_logo/opetel.webp",
+        "uri": "https://www.opetel.fr/",
+        "tags": [ "Laravel" , "Django" , "VueJs", "NuxtJs", "Php","Python" , "Javascript Es6 +"],
+        "role": "Fullstack-Entwickler",
+        "color": "#343536",
+        "colorTa": "#34353680",
+        "description": "Fullstack Developer (Manager der IT-Abteilung), verantwortlich für die IT-Ressourcen der opetel-Struktur, zuständig für die Konzeption und Umsetzung von Kundenanwendungen und -websites ",
         "from": "November 2019",
-        "to": "Now"
+        "to": "August 2021"
       }, {
         "enterprise": "Mveng Engineering",
         "logo": "/enterprises_logo/mveng.webp",
         "uri": "#",
-        "tags": ["Laravel", "jQuery", "HTML / CSS", "Responsive Design"],
-        "role": "Fullstack Web developper",
+        "tags": ["Laravel", "php", "vuejs" , "HTML / CSS"],
+        "role": "Fullstack Webentwickler",
         "color": "#9901d0",
         "colorTa": "#9901d080",
-        "description": "Use of modern technologies to design and build amazing responsive applications",
+        "description": "Nutzung moderner Technologien, um erstaunliche reaktive Anwendungen zu entwerfen und zu erstellen.",
         "from": "April 2018",
-        "to": "December 2020"
+        "to": "Dezember 2020"
       }, {
         "enterprise": "Camsoft Group",
         "logo": "/enterprises_logo/camsoft.webp",
         "uri": "https://www.camsoft-group.com/",
         "tags": ["Php", "Bootstrap", "Javascript", "Adobe Photoshop"],
-        "role": "Front End Developper",
+        "role": "Front-End-Entwickler",
         "color": "#006fbd",
         "colorTa": "#006fbd80",
-        "description": "Use of modern technologies to design and build web applications",
-        "from": "March 2017",
+        "description": "Nutzung moderner Technologien, um Webanwendungen zu entwerfen und zu realisieren",
+        "from": "März 2017",
         "to": "August 2018"
       }, {
         "enterprise": "Freelance",
         "logo": "/enterprises_logo/freelance.webp",
         "uri": "#",
-        "tags": ["React", "Typescript", "Vue", "Laravel", "Node", "Flutter", "Wordpress", "..."],
-        "role": "Freelancer",
+        "tags": ["php", "python", "Vue", "Laravel", "django", "node", "Wordpress", "..."],
+        "role": "Freiberufler",
         "color": "#404042",
         "colorTa": "#40404280",
-        "description": "Always Learning new technologies and build scalable applications for clients and for myself",
-        "from": "October 2012",
+        "description": "Ständig neue Technologien zu erlernen und skalierbare Anwendungen für Kunden und mich selbst zu erstellen.",
+        "from": "Oktober 2012",
         "to": "Now"
       }
     ]

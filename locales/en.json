@@ -30,35 +30,35 @@
     "contact": "Contact me"
   },
   "skills":{
-
+    "title":"Work history & Skills",
     "experiences": [
       {
-        "enterprise": "Mayem solutions",
-        "logo": "/enterprises_logo/mayem_solutions.webp",
-        "uri": "https://mayem-solutions.com/",
-        "tags": ["VueJs", "Laravel", "Postgre", "Element_UI", "Trello", "Gitlab", "Flutter"],
-        "role": "Fullstack Web & Mobile developper",
+        "enterprise": "Bridge africa",
+        "logo": "/enterprises_logo/Bridge_africa.webp",
+        "uri": "https://bridgeafricaventures.com/fr",
+        "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
+        "role": "backend Web & Mobile developper",
         "color": "#fdb91f",
         "colorTa": "#fdb91f80",
-        "description": "Fullstack web & mobile developer, technical manager of IT projects",
-        "from": "Febuary 2021",
-        "to": "July 2021"
-      }, {
-        "enterprise": "Stratochange",
-        "logo": "/enterprises_logo/stratochange.webp",
-        "uri": "http://stratochange-001-site4.btempurl.com/",
-        "tags": ["VueJs", "Tailwind", "Javascript Es6 +", "Vuetify", "NuxtJs"],
-        "role": "Front End Developper",
-        "color": "#0367b5",
-        "colorTa": "#0367b580",
-        "description": "Front end team leader, responsible for the design and implementation of interfaces and graphic components",
-        "from": "November 2019",
+        "description": "backend , technical manager of IT projects",
+        "from": "September 2021",
         "to": "Now"
+      }, {
+        "enterprise": "Opetel",
+        "logo": "/enterprises_logo/opetel.webp",
+        "uri": "https://www.opetel.fr/",
+        "tags": [ "Laravel" , "Django" , "VueJs", "NuxtJs", "Php","Python" , "Javascript Es6 +"],
+        "role": "Fullstack  Developper",
+        "color": "#343536",
+        "colorTa": "#34353680",
+        "description": "Fullstack Developer (IT Department Manager), responsible for the IT resources of the opetel structure, in charge of the conception and the realization of the applications and the customer's web site  ",
+        "from": "November 2019",
+        "to": "August 2021"
       }, {
         "enterprise": "Mveng Engineering",
         "logo": "/enterprises_logo/mveng.webp",
         "uri": "#",
-        "tags": ["Laravel", "jQuery", "HTML / CSS", "Responsive Design"],
+        "tags": ["Laravel", "php", "vuejs" , "HTML / CSS"],
         "role": "Fullstack Web developper",
         "color": "#9901d0",
         "colorTa": "#9901d080",
@@ -80,7 +80,7 @@
         "enterprise": "Freelance",
         "logo": "/enterprises_logo/freelance.webp",
         "uri": "#",
-        "tags": ["React", "Typescript", "Vue", "Laravel", "Node", "Flutter", "Wordpress", "..."],
+        "tags": ["php", "python", "Vue", "Laravel", "django", "node", "Wordpress", "..."],
         "role": "Freelancer",
         "color": "#404042",
         "colorTa": "#40404280",

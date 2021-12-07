@@ -30,41 +30,41 @@
     "contact": "Свяжитесь со мной"
   },
   "skills":{
-
+    "title":"История работы и навыки",
     "experiences": [
       {
-        "enterprise": "Mayem solutions",
-        "logo": "/enterprises_logo/mayem_solutions.webp",
-        "uri": "https://mayem-solutions.com/",
-        "tags": ["VueJs", "Laravel", "Postgre", "Element_UI", "Trello", "Gitlab", "Flutter"],
-        "role": "Fullstack Web & Mobile developper",
+        "enterprise": "Bridge africa",
+        "logo": "/enterprises_logo/Bridge_africa.webp",
+        "uri": "https://bridgeafricaventures.com/fr",
+        "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
+        "role": "бэкенд веб- и мобильный разработчик",
         "color": "#fdb91f",
         "colorTa": "#fdb91f80",
-        "description": "Fullstack web & mobile developer, technical manager of IT projects",
-        "from": "Febuary 2021",
-        "to": "July 2021"
+        "description": "бэкенд, технический менеджер по ИТ-проектам",
+        "from": "сентябрь 2021 года",
+        "to": "Сейчас"
       }, {
-        "enterprise": "Stratochange",
-        "logo": "/enterprises_logo/stratochange.webp",
-        "uri": "http://stratochange-001-site4.btempurl.com/",
-        "tags": ["VueJs", "Tailwind", "Javascript Es6 +", "Vuetify", "NuxtJs"],
-        "role": "Front End Developper",
-        "color": "#0367b5",
-        "colorTa": "#0367b580",
-        "description": "Front end team leader, responsible for the design and implementation of interfaces and graphic components",
-        "from": "November 2019",
-        "to": "Now"
+        "enterprise": "Opetel",
+        "logo": "/enterprises_logo/opetel.webp",
+        "uri": "https://www.opetel.fr/",
+        "tags": [ "Laravel" , "Django" , "VueJs", "NuxtJs", "Php","Python" , "Javascript Es6 +"],
+        "role": "Fullstack Developper",
+        "color": "#343536",
+        "colorTa": "#34353680",
+        "description": "Fullstack-разработчик (менеджер ИТ-отдела), ответственный за ИТ-ресурсы структуры opetel, отвечающий за концепцию и реализацию приложений и веб-сайта клиента ",
+        "from": "ноябрь 2019 года",
+        "to": "август 2021 года"
       }, {
         "enterprise": "Mveng Engineering",
         "logo": "/enterprises_logo/mveng.webp",
         "uri": "#",
-        "tags": ["Laravel", "jQuery", "HTML / CSS", "Responsive Design"],
+        "tags": ["Laravel", "php", "vuejs" , "HTML / CSS"],
         "role": "Fullstack Web developper",
         "color": "#9901d0",
         "colorTa": "#9901d080",
-        "description": "Use of modern technologies to design and build amazing responsive applications",
-        "from": "April 2018",
-        "to": "December 2020"
+        "description": "Использование современных технологий для проектирования и создания удивительных отзывчивых приложений.",
+        "from": "апрель 2018 года",
+        "to": "декабрь 2020 года"
       }, {
         "enterprise": "Camsoft Group",
         "logo": "/enterprises_logo/camsoft.webp",
@@ -73,20 +73,20 @@
         "role": "Front End Developper",
         "color": "#006fbd",
         "colorTa": "#006fbd80",
-        "description": "Use of modern technologies to design and build web applications",
-        "from": "March 2017",
-        "to": "August 2018"
+        "description": "Использование современных технологий для проектирования и создания веб-приложений",
+        "from": "март 2017 года",
+        "to": "август 2018 года"
       }, {
         "enterprise": "Freelance",
         "logo": "/enterprises_logo/freelance.webp",
         "uri": "#",
-        "tags": ["React", "Typescript", "Vue", "Laravel", "Node", "Flutter", "Wordpress", "..."],
+        "tags": ["php", "python", "Vue", "Laravel", "django", "node", "Wordpress", "..."],
         "role": "Freelancer",
         "color": "#404042",
         "colorTa": "#40404280",
-        "description": "Always Learning new technologies and build scalable applications for clients and for myself",
-        "from": "October 2012",
-        "to": "Now"
+        "description": "Постоянное изучение новых технологий и создание масштабируемых приложений для клиентов и себя лично.",
+        "from": "Октябрь 2012",
+        "to": "Сейчас"
       }
     ]
 

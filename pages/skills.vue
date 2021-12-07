@@ -1,10 +1,13 @@
 <template>
   <div class="skill--container flex items-center justify-center flex-wrap content-center py-6 lg:flex lg:flex-nowrap">
     <div class="work--timeline lg:mr-10 w-full lg:w-3/4">
-      <MainTitle title="Work history & Skills" num="0.2" />
+      <MainTitle :title="$t('skills.title')" num="0.2" />
       <div class="wt--container">
         <div v-for="exp in $t('skills.experiences')" :key="exp.id" class="wt--item">
          <!-- {{ $t('skills.experiences') }} -->
+         <div class="wti--icon" color="#900" :style="{ borderColor: exp.color}">
+            <a :href="exp.uri"><img :src="exp.logo" :alt="exp.enterprise" target="_blank" width="50px" height="50px"></a>
+          </div>
           <div class="wti--desc">
             <div class="wtid--content">
               <h3 :style="{ color: exp.color}">{{ exp.role }}</h3>
@@ -18,9 +21,6 @@
             <div class="wtid--aside font-thin text-sm" :style="{ backgroundColor: exp.color}">
               <a :href="exp.uri">{{ exp.enterprise }}</a>
             </div>
-          </div>
-          <div class="wti--icon" color="#900" :style="{ borderColor: exp.color}">
-            <a :href="exp.uri"><img :src="exp.logo" :alt="exp.enterprise" width="50px" height="50px"></a>
           </div>
         </div>
       </div>
@@ -39,73 +39,16 @@ export default {
   layout: 'app',
   data () {
     return {
-      experiences: [
-        {
-          enterprise: 'Mayem solutions',
-          logo: '/enterprises_logo/mayem_solutions.webp',
-          uri: 'https://mayem-solutions.com/',
-          tags: ['VueJs', 'Laravel', 'Postgre', 'Element_UI', 'Trello', 'Gitlab', 'Flutter'],
-          role: 'Fullstack Web & Mobile developper',
-          color: '#fdb91f',
-          colorTa: '#fdb91f80',
-          description: 'Fullstack web & mobile developer, technical manager of IT projects',
-          from: 'Febuary 2021',
-          to: 'July 2021'
-        }, {
-          enterprise: 'Stratochange',
-          logo: '/enterprises_logo/stratochange.webp',
-          uri: 'http://stratochange-001-site4.btempurl.com/',
-          tags: ['VueJs', 'Tailwind', 'Javascript Es6 +', 'Vuetify', 'NuxtJs'],
-          role: 'Front End Developper',
-          color: '#0367b5',
-          colorTa: '#0367b580',
-          description: 'Front end team leader, responsible for the design and implementation of interfaces and graphic components',
-          from: 'November 2019',
-          to: 'Now'
-        }, {
-          enterprise: 'Mveng Engineering',
-          logo: '/enterprises_logo/mveng.webp',
-          uri: '#',
-          tags: ['Laravel', 'jQuery', 'HTML / CSS', 'Responsive Design'],
-          role: 'Fullstack Web developper',
-          color: '#9901d0',
-          colorTa: '#9901d080',
-          description: 'Use of modern technologies to design and build amazing responsive applications',
-          from: 'April 2018',
-          to: 'December 2020'
-        }, {
-          enterprise: 'Camsoft Group',
-          logo: '/enterprises_logo/camsoft.webp',
-          uri: 'https://www.camsoft-group.com/',
-          tags: ['Php', 'Bootstrap', 'Javascript', 'Adobe Photoshop'],
-          role: 'Front End Developper',
-          color: '#006fbd',
-          colorTa: '#006fbd80',
-          description: 'Use of modern technologies to design and build web applications',
-          from: 'March 2017',
-          to: 'August 2018'
-        }, {
-          enterprise: 'Freelance',
-          logo: '/enterprises_logo/freelance.webp',
-          uri: '#',
-          tags: ['React', 'Typescript', 'Vue', 'Laravel', 'Node', 'Flutter', 'Wordpress', '...'],
-          role: 'Freelancer',
-          color: '#404042',
-          colorTa: '#40404280',
-          description: 'Always Learning new technologies and build scalable applications for clients and for myself',
-          from: 'October 2012',
-          to: 'Now'
-        },
-      ],
       skills: [
         { elt: 'Laravel(6 7 8+)', value: '90%', uri: 'https://laravel.com/' },
         { elt: 'php (8+)', value: '95%', uri: 'https://www.php.org/' },
+        { elt: 'Python', value: '45%', uri: 'https://python.org/' },
+        { elt: 'Django', value: '45%', uri: 'https://djangoproject.com/' },
         { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: '#' },
-        { elt: 'Vue Js', value: '60%', uri: 'https://vuejs.org/' },
-        { elt: 'Nuxtjs', value: '60%', uri: 'https://nuxtjs.org/' },
-        { elt: 'Node Js', value: '45%', uri: 'https://nodejs.org/' },
-        { elt: 'Javascript Es6+', value: '80%', uri: 'https://www.javascript.com/' },
-        { elt: 'Git / Github ', value: '87%', uri: '#' },
+        { elt: 'Vue Js', value: '40%', uri: 'https://vuejs.org/' },
+        { elt: 'Nuxtjs', value: '40%', uri: 'https://nuxtjs.org/' },
+        { elt: 'Javascript Es6+', value: '60%', uri: 'https://www.javascript.com/' },
+        { elt: 'Git / Github ', value: '87%', uri: 'https://github.com/hunterbrightdesign' },
         { elt: 'Wordpress', value: '98%', uri: 'https://wordpress.com/' },
       ]
     }
@@ -220,10 +163,10 @@ export default {
               content: "";
               position: absolute;
               height: 1px;
-              width: 100px;
+              width: 200px;
               background-color: #fff;
               z-index: -1;
-              right: 50%;
+              // right: 50%;
             }
 
             &::after {
@@ -236,7 +179,6 @@ export default {
               top: 50%;
             }
           }
-
           &:nth-child(2n + 1) {
             flex-direction: row-reverse;
 
@@ -251,7 +193,7 @@ export default {
             .wti--icon {
 
               &::before {
-                left: 50%;
+                // left: 50%;
               }
 
               &::after {
@@ -295,6 +237,23 @@ export default {
         }
       }
     }
+  }
+
+  @media only screen and (max-width: 768px){
+          .wt--item{
+            display: block !important;
+          }
+
+          .wti--icon{
+            margin-left: auto;
+            margin-right: auto;
+            &::before {
+              display: none;
+            }
+          }
+          .wti--desc{
+            width: 99% !important;
+          }
   }
 </style>
 

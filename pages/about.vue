@@ -35,7 +35,8 @@ export default {
         {name:  'Mysql', uri: 'https://www.mysql.com/'},
         {name:  'Sqlite', uri: 'https://www.sqlite.org/'},
         {name:  'Nuxtjs', uri: 'https://nuxtjs.org/'},
-        {name: 'Node Js', uri: 'https://nodejs.org/'},
+        {name: 'Python', uri: 'https://www.python.org/'},
+        {name: 'Django', uri: 'https://www.djangoproject.com.org/'},
       ],
     }
   },
@@ -70,6 +71,8 @@ export default {
 
         li {
           width: 49%;
+          word-break: break-all;
+          font-size: 0.8em;
 
           a {
             display: inline-block;
