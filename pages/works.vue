@@ -36,7 +36,8 @@
     </div>
     <div id="dipo" class="dipo--img animate__animated animate__flipInY">
       <span class="closedipo" @click="closedipo"> <font-awesome-icon :icon="['fa', 'times']" /> </span>
-      <h1> {{ active }} {{selectImgWork.active}} </h1>
+      <h1 class="test"> {{ active }}  </h1>
+      <p class="test text-sm ">encore de conception ......</p>
 
     </div>
   </div>
@@ -329,6 +330,12 @@ export default {
         border: solid 1px #fff;
         cursor: pointer;
         z-index: 9;
+      }
+      .test{
+        font-size: 50px;
+        margin-top: 15vh;
+        color: #fff;
+        text-align: center;
       }
     }
 
