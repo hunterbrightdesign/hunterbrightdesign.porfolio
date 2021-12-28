@@ -2,17 +2,25 @@
   <div class="contact--container">
     <h4 class="subtitle uTxt my-3">
       <span class="text-base uTxt font-thin">04.</span>
-      What's next ?
+      {{ $t('contact.title') }}
     </h4>
-    <h3 class="font-black text-4xl md:text-6xl cTitle text-center">Get in touch</h3>
+    <h3 class="font-black text-4xl md:text-6xl cTitle text-center">{{ $t('contact.introduction') }}</h3>
     <p class="my-8 leading-relaxed text-center font-thin">
-      I’m interested in freelance and remote opportunities – especially ambitious or large projects. However, if you have other request, question or just want to say hi, I’ll try my best to get back to you!
+      {{ $t('contact.description') }}
     </p>
-    <button class="bp-btn px-4 py-3">
-      <a :href="`mailto:${mail}?subject= Contact from : Portfolio V2`">
-        Say Hello
-      </a>
-    </button>
+    <div>
+      <span class="bp-btn px-3 py-2.5">
+        <a :href="`mailto:${mail}?subject= Contact from : Portfolio V2`">
+          <font-awesome-icon :icon="['fa', iconEmail]" />
+
+        </a>
+      </span>
+      <span v-for="social in socials" :key="social.id" class="bp-btn px-3.5 py-2.5 m-2">
+        <a :href="social.uri" class="text-lg asl--uri" target="blank">
+          <font-awesome-icon :icon="['fab', social.icon]" />
+        </a>
+      </span>
+      </div>
   </div>
 </template>
 
@@ -21,7 +29,13 @@ export default {
   layout: 'app',
   data () {
     return {
-      mail: 'hunterbrightdesign@hotmail.com'
+      mail: 'hunterbrightdesign@hotmail.com',
+      iconEmail:'envelope',
+      socials: [
+        { label: 'Telegram', icon: 'telegram-plane', uri: 'https://t.me/hunterbrightdesign' },
+        { label: 'Whatsapp', icon: 'whatsapp', uri: 'https://wa.me/237697040726' },
+      ]
+
     }
   },
   head() {
@@ -30,8 +44,8 @@ export default {
       meta: [
         {
           hid: 'description',
-          name: 'description',
-          content: 'my website description'
+          name: 'hunterbrightdesign',
+          content: 'developpeur fullstack php python'
         }
       ],
     }

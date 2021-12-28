@@ -25,8 +25,8 @@ export default {
       meta: [
         {
           hid: 'description',
-          name: 'description',
-          content: 'my website description'
+          name: 'hunterbrightdesign',
+          content: 'developpeur fullstack php python'
         }
       ],
     }

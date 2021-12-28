@@ -11,27 +11,33 @@
             <div class="wic--elt">
               <h3 class="wic--title text-3xl text-white font-black text-center">{{ work.name }}</h3>
               <div class="short--divider my-3"></div>
-              <p class="short--descritpion uTxt italic text-base">{{ work.shortDescription }}</p>
-              <ul class="text-xs font-thin uTxtTa2 list">
+              <p class="short--descritpion uTxt italic text-base ">{{ work.shortDescription }}</p>
+              <ul class="text-xs font-thin uTxtTa2 list colorwhiet">
                 <li v-for="tag in work.keyword" :key="tag.id" class="deco">{{tag}}</li>
               </ul>
             </div>
           </div>
           <div class="wi--details animate__animated animate__delay-slow animate__flipInY">
             <div class="wid--container p-3 font-thin text-base">
-              <p class="text-center overflow-hidden">{{ work.description}}</p>
+              <p class="text-center overflow-hidden colorwhiet">{{ work.description}}</p>
               <div class="divider my-5"></div>
-              <ul class="text-xs font-bold uTxtTa">
+              <ul class="text-xs font-bold uTxtTa colorwhiet">
                 <li v-for="tag in work.tags" :key="tag.id" class="deco">{{tag}}</li>
               </ul>
             </div>
           </div>
-          <ul class="wic--links mb-4">
+          <ul class="wic--links">
             <li class="text-sm mr-3"> <a :href="work.uri"><font-awesome-icon :icon="['fa', 'external-link-alt']" /></a> </li>
+            <li class="text-sm mr-3" @click="diapoImg(work.nameDetails), active = work.nameDetails "> <font-awesome-icon :icon="['fa', 'align-justify']" /> </li>
             <li class="text-sm"> <a :href="work.github"><font-awesome-icon :icon="['fab', 'github']" /></a> </li>
           </ul>
         </div>
       </div>
+    </div>
+    <div id="dipo" class="dipo--img animate__animated animate__flipInY">
+      <span class="closedipo" @click="closedipo"> <font-awesome-icon :icon="['fa', 'times']" /> </span>
+      <h1> {{ active }} {{selectImgWork.active}} </h1>
+
     </div>
   </div>
 </template>
@@ -41,19 +47,22 @@ export default {
   layout: 'app',
   data () {
     return {
+      active : null,
       works: [
         {
-          name: 'Workerly',
+          name: 'Bridge Africa',
           img: '/works/workerly.webp',
           uri: '#',
-          github: '#',
+          nameDetails: 'Bridge_Africa',
+          github: 'Bridge_Africa',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
-          tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
+          tags: ['VueJs', 'Laravel', 'Mysql', 'Element UI', 'Trello', 'Github'],
           description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
           shortDescription: 'Lorem ipsum dolor sit amet consectum',
         }, {
           name: 'Season',
           img: '/works/season.webp',
+          nameDetails: 'Season',
           uri: '#',
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
@@ -64,6 +73,7 @@ export default {
           name: 'Stratochange',
           img: '/works/stratochange.webp',
           uri: '#',
+          nameDetails: 'Stratochange',
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -73,6 +83,7 @@ export default {
           name: 'Argon',
           img: '/works/argon.webp',
           uri: '#',
+          nameDetails: 'Argon',
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -82,6 +93,7 @@ export default {
           name: 'Easy Gest',
           img: '/works/easygest.webp',
           uri: '#',
+          nameDetails: 'Easy_Gest',
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -91,6 +103,7 @@ export default {
           name: 'Van Internationnal App',
           img: '/works/van_international.webp',
           uri: '#',
+          nameDetails: 'Van_Internationnal_App',
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -100,6 +113,14 @@ export default {
       ],
       activatedWork: undefined,
       loading: false,
+      selectImgWork:{
+        Bridge_Africa: ['L1.webp','L2.webp,L3.webp','L4.webp'],
+        Season: ['L1.webp','L2.webp,L3.webp','L4.webp'],
+        Stratochange: ['L1.webp','L2.webp,L3.webp','L4.webp'],
+        Argon: ['L1.webp','L2.webp,L3.webp','L4.webp'],
+        Easy_Gest: ['L1.webp','L2.webp,L3.webp','L4.webp'],
+        Van_Internationnal_App: ['L1.webp','L2.webp,L3.webp','L4.webp'],
+      }
     }
   },
   head() {
@@ -108,11 +129,30 @@ export default {
       meta: [
         {
           hid: 'description',
-          name: 'description',
-          content: 'my website description'
+          name: 'hunterbrightdesign',
+          content: 'developpeur fullstack php python'
         }
       ],
     }
+  },
+  methods: {
+    diapoImg(e) {
+      console.log(e)
+      const cv = document.getElementById('dipo')
+      cv.style.display = 'block'
+    },
+    closedipo() {
+      const cv = document.getElementById('dipo')
+
+      cv.classList.remove('animate__flipInY')
+      cv.classList.add('animate__flipOutY')
+
+      setTimeout(() => {
+        cv.style.display = 'none'
+        cv.classList.remove('animate__flipOutY')
+        cv.classList.add('animate__flipInY')
+      }, 750)
+    },
   }
 }
 </script>
@@ -120,10 +160,10 @@ export default {
 <style lang="scss" scoped>
   $tColor1: #ccd6f6;
   $tColor2: #8892b0;
-  $color: #f26800;
+  $color: #185a9a;
   $colorTa: #f2680045;
   $colorTa2: #f2680099;
-  $bg--dark: #091320;
+  $bg--dark: #011b3d;
   $bg: #0a192f;
   $bgTa: #0a192fcc;
   $bgTa2: #0a192f99;
@@ -223,7 +263,7 @@ export default {
           position: absolute;
           bottom: 10px; left: 0;
           height: 10%;
-          width: 70px;
+          width: auto;
           display: flex;
           align-items: center;
           color: #fff;
@@ -265,6 +305,32 @@ export default {
       }
     }
   }
+  .colorwhiet{
+        color: #ccd6f6;
+      }
+    .dipo--img{
+      display: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      background: #011736ce;
+      z-index: 9;
+      .closedipo{
+        position: absolute;
+        right: 50%;
+        color:$tColor1 ;
+        background: $color;
+        padding: 5px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 49%;
+        border: solid 1px #fff;
+        cursor: pointer;
+        z-index: 9;
+      }
+    }
 
   @media (min-width: '1280px') {
     .wc--container {
