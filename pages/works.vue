@@ -28,17 +28,20 @@
           </div>
           <ul class="wic--links">
             <li class="text-sm mr-3"> <a :href="work.uri"><font-awesome-icon :icon="['fa', 'external-link-alt']" /></a> </li>
-            <li class="text-sm mr-3" @click="diapoImg(work.nameDetails), active = work.nameDetails "> <font-awesome-icon :icon="['fa', 'align-justify']" /> </li>
+            <li class="text-sm mr-3" @click="diapoImg(work.listImg, work.nameDetails) "> <font-awesome-icon :icon="['fa', 'align-justify']" /> </li>
             <li class="text-sm"> <a :href="work.github"><font-awesome-icon :icon="['fab', 'github']" /></a> </li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="dipo" class="dipo--img animate__animated animate__flipInY">
+    <div id="dipo" class="dipo--img animate__animated animate__flipInY " @click="closedipo">
+      <h1 class="test"> {{ active }} </h1><hr>
       <span class="closedipo" @click="closedipo"> <font-awesome-icon :icon="['fa', 'times']" /> </span>
-      <h1 class="test"> {{ active }}  </h1>
-      <p class="test text-sm ">encore de conception ......</p>
-
+      <div class="h-98" >
+        <div v-for="li in listImg" :key="li.id" >
+          <img :src="li" :alt="active" class="w-3/4 mx-auto my-5">
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,12 +52,17 @@ export default {
   data () {
     return {
       active : null,
+      listImg : [0],
       works: [
         {
           name: 'Bridge Africa',
           img: '/works/workerly.webp',
           uri: '#',
           nameDetails: 'Bridge_Africa',
+          listImg: ['/works/worksDetails/Bridge_Africa/Bridge_Africa1.webp',
+                    '/works/worksDetails/Bridge_Africa/Bridge_Africa2.webp',
+                    '/works/worksDetails/Bridge_Africa/Bridge_Africa3.webp',
+                    '/works/worksDetails/Bridge_Africa/Bridge_Africa4.webp'],
           github: 'Bridge_Africa',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'Mysql', 'Element UI', 'Trello', 'Github'],
@@ -64,6 +72,10 @@ export default {
           name: 'Season',
           img: '/works/season.webp',
           nameDetails: 'Season',
+          listImg: ['/works/worksDetails/Season/Season1.webp',
+                    '/works/worksDetails/Season/Season2.webp',
+                    '/works/worksDetails/Season/Season3.webp',
+                    '/works/worksDetails/Season/Season4.webp'],
           uri: '#',
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
@@ -75,6 +87,10 @@ export default {
           img: '/works/stratochange.webp',
           uri: '#',
           nameDetails: 'Stratochange',
+          listImg: ['/works/worksDetails/Stratochange/Stratochange1.webp',
+                    '/works/worksDetails/Stratochange/Stratochange2.webp',
+                    '/works/worksDetails/Stratochange/Stratochange3.webp',
+                    '/works/worksDetails/Stratochange/Stratochange4.webp'],
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -85,6 +101,10 @@ export default {
           img: '/works/argon.webp',
           uri: '#',
           nameDetails: 'Argon',
+          listImg: ['/works/worksDetails/Argon/Argon1.webp',
+                    '/works/worksDetails/Argon/Argon2.webp',
+                    '/works/worksDetails/Argon/Argon3.webp',
+                    '/works/worksDetails/Argon/Argon4.webp'],
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -95,6 +115,10 @@ export default {
           img: '/works/easygest.webp',
           uri: '#',
           nameDetails: 'Easy_Gest',
+          listImg: ['/works/worksDetails/Easy_Gest/Easy_Gest1.webp',
+                    '/works/worksDetails/Easy_Gest/Easy_Gest2.webp',
+                    '/works/worksDetails/Easy_Gest/Easy_Gest3.webp',
+                    '/works/worksDetails/Easy_Gest/Easy_Gest4.webp'],
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -105,6 +129,10 @@ export default {
           img: '/works/van_international.webp',
           uri: '#',
           nameDetails: 'Van_Internationnal_App',
+          listImg: ['/works/worksDetails/Van_Internationnal_App/Van_Internationnal_App1.webp',
+                    '/works/worksDetails/Van_Internationnal_App/Van_Internationnal_App2.webp',
+                    '/works/worksDetails/Van_Internationnal_App/Van_Internationnal_App3.webp',
+                    '/works/worksDetails/Van_Internationnal_App/Van_Internationnal_App4.webp'],
           github: '#',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
@@ -114,14 +142,6 @@ export default {
       ],
       activatedWork: undefined,
       loading: false,
-      selectImgWork:{
-        Bridge_Africa: ['L1.webp','L2.webp,L3.webp','L4.webp'],
-        Season: ['L1.webp','L2.webp,L3.webp','L4.webp'],
-        Stratochange: ['L1.webp','L2.webp,L3.webp','L4.webp'],
-        Argon: ['L1.webp','L2.webp,L3.webp','L4.webp'],
-        Easy_Gest: ['L1.webp','L2.webp,L3.webp','L4.webp'],
-        Van_Internationnal_App: ['L1.webp','L2.webp,L3.webp','L4.webp'],
-      }
     }
   },
   head() {
@@ -137,8 +157,10 @@ export default {
     }
   },
   methods: {
-    diapoImg(e) {
-      console.log(e)
+    diapoImg(e , s) {
+      console.log(e , s)
+      this.listImg = e
+      this.active = s
       const cv = document.getElementById('dipo')
       cv.style.display = 'block'
     },
@@ -311,7 +333,7 @@ export default {
       }
     .dipo--img{
       display: none;
-      position: absolute;
+      position: fixed;
       top: 0;
       width: 100%;
       height: 100vh;
@@ -329,11 +351,19 @@ export default {
         border-radius: 49%;
         border: solid 1px #fff;
         cursor: pointer;
+        margin-bottom: 3vh;
         z-index: 9;
+      }
+      .h-98{
+        height: 86vh;
+        overflow: auto;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
       }
       .test{
         font-size: 50px;
-        margin-top: 15vh;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
         color: #fff;
         text-align: center;
       }
