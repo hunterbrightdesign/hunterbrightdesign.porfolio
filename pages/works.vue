@@ -53,6 +53,13 @@ export default {
     return {
       active : null,
       listImg : [0],
+      options: {
+        slidesPerView: 3,
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination'
+        }
+      },
       works: [
         {
           name: 'Bridge Africa',
