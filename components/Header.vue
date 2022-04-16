@@ -43,7 +43,7 @@
       </div>
     </div>
     <div id="cv" class="cv--container" @click.self="closeCv">
-      <embed id="embed" src="/cv_hunter_fr.pdf" class="cv--content animate__animated animate__flipInY" type="application/pdf" width="624" height="877">
+      <embed id="embed" :src="$t('cv')" class="cv--content animate__animated animate__flipInY" type="application/pdf" width="624" height="877">
     </div>
   </div>
 </template>

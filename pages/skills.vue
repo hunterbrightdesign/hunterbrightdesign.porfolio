@@ -42,13 +42,15 @@ export default {
       skills: [
         { elt: 'Laravel(6 7 8+)', value: '90%', uri: 'https://laravel.com/' },
         { elt: 'php (8+)', value: '95%', uri: 'https://www.php.org/' },
-        { elt: 'Python', value: '45%', uri: 'https://python.org/' },
-        { elt: 'Django', value: '45%', uri: 'https://djangoproject.com/' },
+        { elt: 'Python', value: '50%', uri: 'https://python.org/' },
+        { elt: 'Django', value: '50%', uri: 'https://djangoproject.com/' },
+        { elt: 'Torbado/Flask', value: '50%', uri: 'https://flask.palletsprojects.com/en/2.1.x/' },
         { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: '#' },
-        { elt: 'Vue Js', value: '40%', uri: 'https://vuejs.org/' },
-        { elt: 'Nuxtjs', value: '40%', uri: 'https://nuxtjs.org/' },
+        { elt: 'Vue Js', value: '50%', uri: 'https://vuejs.org/' },
+        { elt: 'Nuxtjs', value: '50%', uri: 'https://nuxtjs.org/' },
         { elt: 'Javascript Es6+', value: '60%', uri: 'https://www.javascript.com/' },
         { elt: 'Git / Github ', value: '87%', uri: 'https://github.com/hunterbrightdesign' },
+        { elt: 'Docker / Kubernetes ', value: '40%', uri: 'https://www.docker.com/' },
         { elt: 'Wordpress', value: '98%', uri: 'https://wordpress.com/' },
       ]
     }
