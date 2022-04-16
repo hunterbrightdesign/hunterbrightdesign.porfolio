@@ -26,7 +26,7 @@ export default {
         {
           hid: 'description',
           name: 'hunterbrightdesign',
-          content: 'developpeur fullstack php python'
+          content: 'Software Engineer'
         }
       ],
     }

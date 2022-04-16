@@ -6,7 +6,7 @@
     "contact": "Contact",
     "resume": "Resume"
   },
-  "cv":"cv_fokoui_en.pdf",
+  "cv":"/cv_fokoui_en.pdf",
   "home": {
     "introduction": "Hi, my name is",
     "description": "I build web & mobile app.",
@@ -34,9 +34,20 @@
     "title":"Work history & Skills",
     "experiences": [
       {
+        "enterprise": "Aichemydev",
+        "logo": "/enterprises_logo/aichemy_logo.webp",
+        "uri": "https://aichemy.dev/",
+        "tags": ["VueJs", "Tornado", "Postgre", "docker", "element ui", "Github"],
+        "role": "Fullstack Web developper",
+        "color": "#faaf40",
+        "colorTa": "#faaf4080",
+        "description": "Fullstack, Using modern technologies to design and create amazing responsive applications.",
+        "from": "January 2022",
+        "to": "Now"
+      },{
         "enterprise": "Bridge africa",
         "logo": "/enterprises_logo/Bridge_africa.webp",
-        "uri": "https://bridgeafricaventures.com/fr",
+        "uri": "https://bridgeafrica.com/fr",
         "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
         "role": "backend Web & Mobile developper",
         "color": "#fdb91f",

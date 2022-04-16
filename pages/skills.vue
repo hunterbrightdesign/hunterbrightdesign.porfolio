@@ -44,7 +44,7 @@ export default {
         { elt: 'php (8+)', value: '95%', uri: 'https://www.php.org/' },
         { elt: 'Python', value: '50%', uri: 'https://python.org/' },
         { elt: 'Django', value: '50%', uri: 'https://djangoproject.com/' },
-        { elt: 'Torbado/Flask', value: '50%', uri: 'https://flask.palletsprojects.com/en/2.1.x/' },
+        { elt: 'Torbado/Flask', value: '50%', uri: 'https://flask.palletsprojects.com' },
         { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: '#' },
         { elt: 'Vue Js', value: '50%', uri: 'https://vuejs.org/' },
         { elt: 'Nuxtjs', value: '50%', uri: 'https://nuxtjs.org/' },
@@ -62,7 +62,7 @@ export default {
         {
           hid: 'description',
           name: 'hunterbrightdesign',
-          content: 'developpeur fullstack php python'
+          content: 'Software Engineer'
         }
       ],
     }

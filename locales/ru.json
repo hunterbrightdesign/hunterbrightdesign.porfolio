@@ -6,7 +6,7 @@
     "contact": "Контакт",
     "resume": "Продолжить"
   },
-  "cv":"cv_fokoui_en.pdf",
+  "cv":"/cv_fokoui_en.pdf",
   "home": {
     "introduction": "Привет, меня зовут",
     "description": "Я создаю веб-приложение и мобильное приложение.",
@@ -34,9 +34,20 @@
     "title":"История работы и навыки",
     "experiences": [
       {
+        "enterprise": "Aichemydev",
+        "logo": "/enterprises_logo/aichemy_logo.webp",
+        "uri": "https://aichemy.dev/",
+        "tags": ["VueJs", "Tornado", "Postgre", "docker", "element ui", "Github"],
+        "role": "Веб-разработчик Fullstack",
+        "color": "#faaf40",
+        "colorTa": "#faaf4080",
+        "description": "Фуллстэк, Использование современных технологий для проектирования и создания удивительных отзывчивых приложений.",
+        "from": "январь 2022 года",
+        "to": "Сейчас"
+      },{
         "enterprise": "Bridge africa",
         "logo": "/enterprises_logo/Bridge_africa.webp",
-        "uri": "https://bridgeafricaventures.com/fr",
+        "uri": "https://bridgeafrica.com/fr",
         "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
         "role": "бэкенд веб- и мобильный разработчик",
         "color": "#fdb91f",
