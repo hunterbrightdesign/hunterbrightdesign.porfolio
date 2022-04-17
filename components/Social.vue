@@ -22,6 +22,7 @@ export default {
         { label: 'LinkedIn', icon: 'linkedin', uri: 'https://www.linkedin.com/in/hunterbrightdesign' },
         { label: 'Telegram', icon: 'telegram-plane', uri: 'https://t.me/hunterbrightdesign' },
         { label: 'Codepen', icon: 'codepen', uri: 'https://codepen.io/hunterbrightdesign' },
+        { label: 'twitter', icon: 'twitter', uri: 'https://twitter.com/FokouiM' },
         { label: 'Whatsapp', icon: 'whatsapp', uri: 'https://wa.me/237697040726' },
       ]
     }

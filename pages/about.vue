@@ -36,7 +36,7 @@ export default {
         {name:  'Sqlite', uri: 'https://www.sqlite.org/'},
         {name:  'Nuxtjs', uri: 'https://nuxtjs.org/'},
         {name: 'Python', uri: 'https://www.python.org/'},
-        {name: 'Django', uri: 'https://www.djangoproject.com.org/'},
+        {name: 'Django', uri: 'https://www.djangoproject.com/'},
         {name: 'Tornado / Flask', uri: 'https://flask.palletsprojects.com'},
         {name: 'Docker / Kubernetes ', uri: 'https://www.docker.com/'},
       ],

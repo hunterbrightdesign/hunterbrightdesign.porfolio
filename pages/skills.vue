@@ -6,7 +6,7 @@
         <div v-for="exp in $t('skills.experiences')" :key="exp.id" class="wt--item">
          <!-- {{ $t('skills.experiences') }} -->
          <div class="wti--icon" color="#900" :style="{ borderColor: exp.color}">
-            <a :href="exp.uri"><img :src="exp.logo" :alt="exp.enterprise" target="_blank" width="50px" height="50px"></a>
+            <a :href="exp.uri" target="_blank"><img :src="exp.logo" :alt="exp.enterprise" target="_blank" width="50px" height="50px"></a>
           </div>
           <div class="wti--desc">
             <div class="wtid--content">
@@ -19,7 +19,7 @@
               </ul>
             </div>
             <div class="wtid--aside font-thin text-sm" :style="{ backgroundColor: exp.color}">
-              <a :href="exp.uri">{{ exp.enterprise }}</a>
+              <a :href="exp.uri" target="_blank">{{ exp.enterprise }}</a>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ export default {
         { elt: 'Python', value: '50%', uri: 'https://python.org/' },
         { elt: 'Django', value: '50%', uri: 'https://djangoproject.com/' },
         { elt: 'Torbado/Flask', value: '50%', uri: 'https://flask.palletsprojects.com' },
-        { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: '#' },
+        { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: 'https://www.postgresql.org/' },
         { elt: 'Vue Js', value: '50%', uri: 'https://vuejs.org/' },
         { elt: 'Nuxtjs', value: '50%', uri: 'https://nuxtjs.org/' },
         { elt: 'Javascript Es6+', value: '60%', uri: 'https://www.javascript.com/' },

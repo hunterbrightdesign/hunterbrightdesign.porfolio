@@ -9,14 +9,14 @@
       {{ $t('contact.description') }}
     </p>
     <div>
-      <span class="bp-btn px-3 py-2.5">
-        <a :href="`mailto:${mail}?subject= Contact from : Portfolio V2`">
+      <span>
+        <a :href="`mailto:${mail}?subject= Contact from : Portfolio V2`" class="bp-btn px-2.5 py-2">
           <font-awesome-icon :icon="['fa', iconEmail]" />
 
         </a>
       </span>
-      <span v-for="social in socials" :key="social.id" class="bp-btn px-3.5 py-2.5 m-2">
-        <a :href="social.uri" class="text-lg asl--uri" target="blank">
+      <span v-for="social in socials" :key="social.id" class="">
+        <a :href="social.uri" class="text-lg asl--uri bp-btn px-3 py-2 m-2" target="blank">
           <font-awesome-icon :icon="['fab', social.icon]" />
         </a>
       </span>

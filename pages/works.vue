@@ -11,7 +11,7 @@
             <div class="wic--elt">
               <h3 class="wic--title text-3xl text-white font-black text-center">{{ work.name }}</h3>
               <div class="short--divider my-3"></div>
-              <p class="short--descritpion uTxt italic text-base ">{{ work.shortDescription }}</p>
+              <p class="short--descritpion text-white italic text-base ">{{ work.shortDescription }}</p>
               <ul class="text-xs font-thin uTxtTa2 list colorwhiet">
                 <li v-for="tag in work.keyword" :key="tag.id" class="deco">{{tag}}</li>
               </ul>
@@ -27,9 +27,9 @@
             </div>
           </div>
           <ul class="wic--links">
-            <li class="text-sm mr-3"> <a :href="work.uri"><font-awesome-icon :icon="['fa', 'external-link-alt']" /></a> </li>
+            <li class="text-sm mr-3"> <a :href="work.uri" target="_blank"><font-awesome-icon :icon="['fa', 'external-link-alt']" /></a> </li>
             <li class="text-sm mr-3" @click="diapoImg(work.listImg, work.nameDetails) "> <font-awesome-icon :icon="['fa', 'align-justify']" /> </li>
-            <li class="text-sm"> <a :href="work.github"><font-awesome-icon :icon="['fab', 'github']" /></a> </li>
+            <li class="text-sm"> <a :href="work.github" target="_blank"><font-awesome-icon :icon="['fab', 'github']" /></a> </li>
           </ul>
         </div>
       </div>
@@ -62,72 +62,72 @@ export default {
       },
       works: [
         {
+          name: 'TestGold',
+          img: '/works/testgold.webp',
+          uri: 'https://prod.k8s.testgold.dev/',
+          nameDetails: 'TestGold for Aichemydev',
+          listImg: ['/works/worksDetails/quikly/testgold.webp'],
+          github: 'https://github.com/hunterbrightdesign',
+          keyword: ['#Test_automation', '#Auto_gen', '#Auto_heal', '#Enhance_coverage'],
+          tags: ['VueJs', 'Tornado', 'PostgreSQL', 'Element UI', 'Slack', 'Github', 'Docker', 'kubernetes', 'Azur'],
+          description: 'We are a strong technical team comprised of multiple PhDs and Data Science experts. Our founders are established entrepreneurs who have successfully built several products to solve key customer problems. Our people come from top schools like Stanford, Princeton, Johns Hopkins, UT Austin, UC Berkeley, Harvey Mudd, etc. We are comprised of AI experts who are very passionate about solving the problems plaguing testing. We also happen to have several top level chess players in our team attesting to our problem solving capabilities!',
+          shortDescription: 'We are a strong technical team comprised of multiple.....',
+        },{
           name: 'Bridge Africa',
           img: '/works/worksDetails/Bridge_Africa/bridge_africa.webp',
-          uri: '#',
+          uri: 'https://bridgeafrica.com/login',
           nameDetails: 'Bridge_Africa',
           listImg: ['/works/worksDetails/Bridge_Africa/bridge_africa.webp'],
-          github: 'Bridge_Africa',
+          github: 'https://github.com/hunterbrightdesign',
           keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
           tags: ['VueJs', 'Laravel', 'Mysql', 'Element UI', 'Trello', 'Github'],
           description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
-          shortDescription: 'Lorem ipsum dolor sit amet consectum',
+          shortDescription: 'Alias error voluptatibus debitis deleniti nesciunt cum .....',
         }, {
           name: 'Season',
           img: '/works/season.webp',
           nameDetails: 'Season',
           listImg: ['/works/worksDetails/Season/Season1.webp'],
-          uri: '#',
-          github: '#',
-          keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
+          uri: 'https://mayem-solutions.com/projets-ms/',
+          github: 'https://github.com/hunterbrightdesign',
+          keyword: ['#beds24', '#chicApart', '#hosting', '#accomodations', '#booking'],
           tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
-          description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
-          shortDescription: 'Lorem ipsum dolor sit amet consectum',
+          description: 'Season is a web application allowing the Chicaparts company on the one hand to have an ERP for the internal planning of all of its furnished rental management activities, on the other hand to update a web extranet available to its customers',
+          shortDescription: 'Season is a web application allowing the Chicaparts.....',
         }, {
           name: 'Stratochange',
           img: '/works/stratochange.webp',
-          uri: '#',
+          uri: 'http://stratochange-nuxt.herokuapp.com/',
           nameDetails: 'Stratochange',
           listImg: ['/works/worksDetails/Stratochange/Stratochange1.webp'],
-          github: '#',
-          keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
-          tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
-          description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
-          shortDescription: 'Lorem ipsum dolor sit amet consectum',
+          github: 'https://github.com/hunterbrightdesign',
+          keyword: ['#change', '#stakholder', '#priorisations', '#risks'],
+          tags: ['VueJs', 'Nuxtjs', 'c#', 'Tailwind Css','Microsoft Azure', 'Flutter'],
+          description: 'While most projects produce significant outputs, the expected changes in the medium and long term are often not forthcoming. The major cause of this insufficiency is the lack of participation and ownership of the project by its stakeholders. </br>This low participation can be greatly improved thanks to our operational strategic change management tools: STRAT-O-CHANGE',
+          shortDescription: 'This low participation can be greatly improved thanks to .....',
         }, {
           name: 'Argon',
           img: '/works/argon.webp',
-          uri: '#',
+          uri: 'https://mvengi.com/',
           nameDetails: 'Argon',
           listImg: ['/works/worksDetails/Argon/Argon1.webp',],
-          github: '#',
-          keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
-          tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
-          description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
-          shortDescription: 'Lorem ipsum dolor sit amet consectum',
+          github: 'https://github.com/hunterbrightdesign',
+          keyword: ['#shool management system', '#education', '#learn'],
+          tags: ['Laravel', 'Mysql', 'Html/css', 'jQuery', 'cpanel'],
+          description: 'All-in-one school software package, the complete private and public school management solution Modern school management platform on the move',
+          shortDescription: 'All-in-one school software package, the .....',
         }, {
           name: 'Easy Gest',
           img: '/works/easygest.webp',
-          uri: '#',
+          uri: 'https://github.com/hunterbrightdesign',
           nameDetails: 'Easy_Gest',
           listImg: ['/works/worksDetails/Easy_Gest/Easy_Gest1.webp'],
-          github: '#',
-          keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
-          tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
-          description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
-          shortDescription: 'Lorem ipsum dolor sit amet consectum',
-        }, {
-          name: 'Van Internationnal App',
-          img: '/works/van_international.webp',
-          uri: '#',
-          nameDetails: 'Van_Internationnal_App',
-          listImg: ['/works/worksDetails/Van_Internationnal_App/Van_Internationnal_App1.webp'],
-          github: '#',
-          keyword: ['#tag1', '#tag2', '#tag3', '#tag4'],
-          tags: ['VueJs', 'Laravel', 'PostgreSQL', 'Element UI', 'Trello', 'Gitlab', 'Flutter'],
-          description: 'Alias error voluptatibus debitis deleniti nesciunt cum tempore quas, neque, vitae eligendi quam magnam nostrum sunt officia molestiae cumque, reprehenderit officiis. Dolorum?',
-          shortDescription: 'Lorem ipsum dolor sit amet consectum',
-        },
+          github: 'https://github.com/hunterbrightdesign',
+          keyword: ['#management', '#Human resources', '#Accounting', '#messaging'],
+          tags: ['VueJs', 'Laravel', 'MYSQL', 'Bootstrap', 'Trello', 'Gitlab'],
+          description: 'Fully human resources & accounting application with lot of functionalities',
+          shortDescription: 'Fully human resources & accounting ......',
+        }, 
       ],
       activatedWork: undefined,
       loading: false,
