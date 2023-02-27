@@ -50,8 +50,8 @@
         "uri": "https://bridgeafrica.com/fr",
         "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
         "role": "backend Web & Mobile developper",
-        "color": "#fdb91f",
-        "colorTa": "#fdb91f80",
+        "color": "#32a501",
+        "colorTa": "#32a50180",
         "description": "backend , technical manager of IT projects",
         "from": "September 2021",
         "to": "Now"
