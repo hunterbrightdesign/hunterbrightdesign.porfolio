@@ -37,7 +37,7 @@
         "enterprise": "Aichemydev",
         "logo": "/enterprises_logo/aichemy_logo.webp",
         "uri": "https://aichemy.dev/",
-        "tags": ["VueJs", "Tornado", "Postgre", "docker", "element ui", "Github"],
+        "tags": ["VueJs", "ReactJs", "Tornado", "Postgre", "Azur/AWS", "docker", "element ui", "Git", "Github"],
         "role": "Fullstack Web developper",
         "color": "#faaf40",
         "colorTa": "#faaf4080",

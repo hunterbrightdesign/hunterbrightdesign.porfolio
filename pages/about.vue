@@ -27,18 +27,19 @@ export default {
   data () {
     return {
       mainTechno: [
-        {name: 'Javascript (Es6 +)', uri: 'https://www.javascript.com/'},
-        {name: 'Vue Js', uri: 'https://vuejs.org/'},
+        {name: 'Javascript & typeScript', uri: 'https://www.javascript.com/'},
+        { name: 'VueJs & Nuxtjs', uri: 'https://vuejs.org/'},
         {name: 'Php (7 +)', uri: 'https://www.javascript.com/'},
         {name: 'Laravel(6 7 8+)', uri: 'https://laravel.com/'},
         {name: 'Postgresql', uri: 'https://www.postgresql.org/'},
         {name:  'Mysql', uri: 'https://www.mysql.com/'},
         {name:  'Sqlite', uri: 'https://www.sqlite.org/'},
-        {name:  'Nuxtjs', uri: 'https://nuxtjs.org/'},
+        { name: 'ReactJs', uri: 'https://reactjs.org/'},
         {name: 'Python', uri: 'https://www.python.org/'},
-        {name: 'Django', uri: 'https://www.djangoproject.com/'},
+        { name: 'Dart (Flutter)', uri: 'https://docs.flutter.dev/'},
         {name: 'Tornado / Flask', uri: 'https://flask.palletsprojects.com'},
-        {name: 'Docker / Kubernetes ', uri: 'https://www.docker.com/'},
+        { name: 'Docker / Kubernetes ', uri: 'https://www.docker.com/' },
+        { name: 'Extension chrome', uri: 'https://developer.chrome.com/' },
       ],
     }
   },
