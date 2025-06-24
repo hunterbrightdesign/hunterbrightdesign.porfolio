@@ -4,91 +4,109 @@
     "skills": "Skills",
     "works": "Works",
     "contact": "Contact",
-    "resume": "Resume"
+    "resume": "My Resume"
   },
-  "cv":"/cv_fokoui_en.pdf",
+  "cv": "/cv_fokoui_en.pdf",
   "home": {
     "introduction": "Hi, my name is",
-    "description": "software engineer.",
-    "me": "I'm a",
-    "profession": "software engineer",
-    "text-1": "specializing in designing and building scalable and maintainable solutions and AI-based solutions for web & mobile (...) for more",
-    "text-2": "tools both for individuals and for small or large businesses with distinct sizes.",
+    "description": "Software Engineer, .",
+    "me": "I am",
+    "profession": "software engineer ",
+    "text-1": "specialized in designing and implementing scalable and maintainable solutions and AI-based solutions for web and mobile (...) particularly",
+    "text-2": "for both individuals and small or large companies.",
     "evidence-1": "innovative",
     "evidence-2": "intuitive",
     "and": "and",
-    "contact": "Get in touch"
+    "contact": "Contact Me"
   },
+
   "about": {
-    "title":"Who is this guy",
-    "introduction": "Hello!, My name is",
-    "description": " am a software Engineer, CEO of hunter-tech and occasionally a designer. My passion for the IT dates from my first year of university in 2012 when I discovered javascript and php.",
-    "text-1": "Since then, I have not hesitated to discover, design and build ultra modern and scalable platforms and applications through the multiple technologies that make up my profile.",
-    "text-2": "Among which the main ones are :",
+    "title": "Who am I",
+    "introduction": "Hello, my name is",
+    "description": " am a software engineer, CEO of hunter-tech and occasionally a designer. My passion for computer science dates back to my first year at university in 2012 when I discovered JavaScript and PHP.",
+    "text-1": "Since then, I have not hesitated to discover, design and build ultra-modern and scalable platforms and applications through the multiple technologies that make up my profile.",
+    "text-2": "Among which the main ones are:",
     "evidence-1": "innovative",
     "evidence-2": "intuitive",
     "and": "and",
     "contact": "Contact me"
   },
-  "skills":{
-    "title":"Work history & Skills",
+  "skills": {
+    "title": "Professional Experience ",
     "experiences": [
+      {
+        "enterprise": "aiguards",
+        "logo": "/enterprises_logo/aiguards.svg",
+        "uri": "https://aichemy.dev/",
+        "tags": ["ReactJs", "FastApi", "postgresqlsql", "GCP/AWS", "docker", "Selenium", "Bigquery", "Github", "Aider", "Ollama"],
+        "role": "Software Engineer",
+        "color": "#e6830b",
+        "colorTa": "#e6830b80",
+        "description": "Software engineer, using modern technologies to design and create AI-based testing applications.",
+        "from": "December 2025",
+        "to": "Present"
+      },
       {
         "enterprise": "Aichemydev",
         "logo": "/enterprises_logo/aichemy_logo.webp",
         "uri": "https://aichemy.dev/",
-        "tags": ["VueJs", "ReactJs", "Tornado", "Postgre", "Azur/AWS", "docker", "element ui", "Git", "Github"],
-        "role": "software engineerr",
+        "tags": ["VueJs", "ReactJs", "Tornado", "postgresqlsql", "GCP/AWS", "docker", "Selenium", "Git", "Github"],
+        "role": "Software Engineer",
         "color": "#faaf40",
         "colorTa": "#faaf4080",
-        "description": "software engineer, Using modern technologies to design and create AI-based test application.",
+        "description": "Software engineer, using modern technologies to design and create AI-based testing applications.",
         "from": "January 2022",
-        "to": "Now"
-      },{
+        "to": "Present"
+      },
+      {
         "enterprise": "Bridge africa",
         "logo": "/enterprises_logo/Bridge_africa.webp",
         "uri": "https://bridgeafrica.com/fr",
-        "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
-        "role": "backend Web & Mobile developper",
+        "tags": ["VueJs", "Laravel", "postgresql", "Mysql", "Trello", "Github", "wordpress"],
+        "role": "Backend Web & Mobile Developer",
         "color": "#32a501",
         "colorTa": "#32a50180",
-        "description": "backend , technical manager of IT projects",
+        "description": "Backend developer, technical lead for IT projects",
         "from": "September 2021",
-        "to": "Now"
-      }, {
+        "to": "Present"
+      },
+      {
         "enterprise": "Opetel",
         "logo": "/enterprises_logo/opetel.webp",
         "uri": "https://www.opetel.fr/",
-        "tags": [ "Laravel" , "Django" , "VueJs", "NuxtJs", "Php","Python" , "Javascript Es6 +"],
-        "role": "Fullstack  Developper",
+        "tags": ["Laravel", "Django", "VueJs", "NuxtJs", "Php", "Python", "Javascript Es6 +"],
+        "role": "Fullstack Developer",
         "color": "#343536",
         "colorTa": "#34353680",
-        "description": "Fullstack Developer (IT Department Manager), responsible for the IT resources of the opetel structure, in charge of the conception and the realization of the applications and the customer's web site  ",
+        "description": "Fullstack Developer (IT Department Manager), responsible for IT resources of the Opetel structure, in charge of designing and implementing client applications and websites",
         "from": "November 2019",
         "to": "August 2021"
-      }, {
+      },
+      {
         "enterprise": "Mveng Engineering",
         "logo": "/enterprises_logo/mveng.webp",
         "uri": "#",
-        "tags": ["Laravel", "php", "vuejs" , "HTML / CSS"],
-        "role": "Fullstack Web developper",
+        "tags": ["Laravel", "php", "vuejs", "HTML / CSS"],
+        "role": "Fullstack Web Developer",
         "color": "#9901d0",
         "colorTa": "#9901d080",
-        "description": "Use of modern technologies to design and build amazing responsive applications",
+        "description": "Using modern technologies to design and create amazing responsive applications.",
         "from": "April 2018",
         "to": "December 2020"
-      }, {
+      },
+      {
         "enterprise": "Camsoft Group",
         "logo": "/enterprises_logo/camsoft.webp",
         "uri": "https://www.camsoft-group.com/",
         "tags": ["Php", "Bootstrap", "Javascript", "Adobe Photoshop"],
-        "role": "Front End Developper",
+        "role": "Front End Developer",
         "color": "#006fbd",
         "colorTa": "#006fbd80",
-        "description": "Use of modern technologies to design and build web applications",
+        "description": "Using modern technologies to design and implement web applications",
         "from": "March 2017",
         "to": "August 2018"
-      }, {
+      },
+      {
         "enterprise": "Freelance",
         "logo": "/enterprises_logo/freelance.webp",
         "uri": "#",
@@ -96,16 +114,15 @@
         "role": "Freelancer",
         "color": "#404042",
         "colorTa": "#40404280",
-        "description": "Always Learning new technologies and build scalable applications for clients and for myself",
+        "description": "Continuously learning new technologies and creating scalable applications for clients and myself.",
         "from": "October 2012",
-        "to": "Now"
+        "to": "Present"
       }
     ]
-
   },
   "contact": {
-    "title":"What's next ?",
-    "introduction": "Get in touch",
-    "description": " I’m interested in freelance and remote opportunities – especially ambitious or large projects. However, if you have other request, question or just want to say hi, I’ll try my best to get back to you!"
+    "title": "What's next?",
+    "introduction": "Get in touch with me",
+    "description": " I am interested in freelance and remote opportunities - particularly ambitious or large-scale projects. However, if you have other requests, questions, or just want to say hello, I will do my best to respond!"
   }
 }

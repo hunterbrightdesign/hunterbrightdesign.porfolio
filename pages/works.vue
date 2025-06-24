@@ -63,10 +63,10 @@ export default {
       works: [
         {
           name: 'aiguards statemachine',
-          img: '/works/testgold.webp',
+          img: '/works/statemachine.png',
           uri: 'https://github.com/aiguards/statemachine',
           nameDetails: 'statemachine for aiguards',
-          listImg: ['/works/worksDetails/quikly/wring_recorder.png'],
+          listImg: ['/works/worksDetails/statemachine/statemachine.png'],
           github: 'https://github.com/aiguards/statemachine',
           keyword: ['#Test_automation', '#Auto_gen', '#Auto_heal', '#Enhance_coverage'],
           tags: ['Javascript', 'PostgreSQL', 'python', 'FastApi', 'Github', 'Aider', 'Docker', 'Ollama', 'AWS'],
@@ -75,10 +75,10 @@ export default {
         },
         {
           name: 'wring recoder',
-          img: '/works/testgold.webp',
+          img: '/works/wring_recorder.png',
           uri: 'https://chromewebstore.google.com/detail/wringr-recorder/ooeicnfmlhjdoaidefkgljcmcpbooofj?authuser=1&hl=en',
           nameDetails: 'wring recoder for Aichemydev',
-          listImg: ['/works/worksDetails/quikly/wring_recorder.png'],
+          listImg: ['/works/worksDetails/wring_recorder/wring_recorder.png'],
           github: 'https://github.com/aichemydev/google_recorder_dom',
           keyword: ['#Test_automation', '#Auto_gen', '#Auto_heal', '#Enhance_coverage'],
           tags: ['Javascript', 'PostgreSQL', 'Element UI', 'Slack', 'Github'],
@@ -87,10 +87,10 @@ export default {
         },
         {
           name: 'wring miniext',
-          img: '/works/testgold.webp',
+          img: '/works/miniext.png',
           uri: 'https://app.wring.dev',
           nameDetails: 'wring for Aichemydev',
-          listImg: ['/works/worksDetails/quikly/miniext.png'],
+          listImg: ['/works/worksDetails/miniext/miniext.png'],
           github: 'https://github.com/aichemydev/miniext',
           keyword: ['#Test_automation', '#Auto_gen', '#Auto_heal', '#Enhance_coverage'],
           tags: ['Javascript', 'PostgreSQL', 'Element UI', 'Slack', 'Github'],

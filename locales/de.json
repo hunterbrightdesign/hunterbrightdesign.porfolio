@@ -1,94 +1,112 @@
 {
   "menu": {
-    "about": "Auf",
+    "about": "Über mich",
     "skills": "Fähigkeiten",
-    "works": "Theaterstücke",
+    "works": "Arbeiten",
     "contact": "Kontakt",
-    "resume": "Lebenslauf"
+    "resume": "Mein Lebenslauf"
   },
-  "cv":"/cv_fokoui_en.pdf",
+  "cv": "/cv_fokoui_fr.pdf",
   "home": {
-    "introduction": "Hallo Ich heisse",
-    "description": "Ich baue eine Web- und mobile Anwendung.",
-    "me": "ich bin",
-    "profession": "Softwareentwickler",
-    "text-1": "spezialisiert auf das Design und die Produktion von skalierbaren und wartungsfreundlichen Lösungen für das Web und mobile Geräte (...) insbesondere Tools",
-    "text-2": "sowohl für Einzelpersonen als auch für kleine oder große Unternehmen.",
-    "evidence-1": "innovativ",
-    "evidence-2": "intuitiv",
+    "introduction": "Hallo, ich heiße",
+    "description": "Software-Ingenieur, .",
+    "me": "Ich bin",
+    "profession": "Software-Ingenieur ",
+    "text-1": "spezialisiert auf die Konzeption und Umsetzung skalierbarer und wartbarer Lösungen sowie KI-basierter Lösungen für Web und Mobile (...) insbesondere",
+    "text-2": "sowohl für Privatpersonen als auch für kleine oder große Unternehmen.",
+    "evidence-1": "innovative",
+    "evidence-2": "intuitive",
     "and": "und",
-    "contact": "In Kontakt kommen"
+    "contact": "Kontaktieren Sie mich"
   },
+
   "about": {
-    "title":"Wer ist dieser Kerl? ",
-    "introduction": "Hallo Ich heisse",
-    "description": " bin Software-Ingenieur und gelegentlich Designer. Meine Leidenschaft für das Web stammt aus meinem ersten Studienjahr 2012, als ich Javascript und PHP entdeckte.",
-    "text-1": "Seitdem habe ich nicht gezögert, ultramoderne und skalierbare Plattformen und Anwendungen durch die verschiedenen Technologien, die mein Profil ausmachen, zu entdecken, zu entwerfen und zu bauen.",
-    "text-2": "Unter den wichtigsten sind:",
-    "evidence-1": "Innovatoren",
-    "evidence-2": "intuitiv",
-    "and": "et",
-    "contact": "Kontaktierte mich"
+    "title": "Wer bin ich",
+    "introduction": "Hallo, ich heiße",
+    "description": " bin ein Software-Ingenieur, CEO von hunter-tech und gelegentlich ein Designer. Meine Leidenschaft für die Informatik geht auf mein erstes Universitätsjahr 2012 zurück, als ich JavaScript und PHP entdeckte.",
+    "text-1": "Seitdem habe ich nicht gezögert, ultramoderne und skalierbare Plattformen und Anwendungen durch die vielfältigen Technologien zu entdecken, zu entwerfen und zu entwickeln, die mein Profil ausmachen.",
+    "text-2": "Zu den wichtigsten gehören:",
+    "evidence-1": "innovative",
+    "evidence-2": "intuitive",
+    "and": "und",
+    "contact": "Kontaktieren Sie mich"
   },
-  "skills":{
-    "title":"Beruflicher Werdegang & Qualifikationen",
+  "skills": {
+    "title": "Berufserfahrung ",
     "experiences": [
+      {
+        "enterprise": "aiguards",
+        "logo": "/enterprises_logo/aiguards.svg",
+        "uri": "https://aichemy.dev/",
+        "tags": ["ReactJs", "FastApi", "postgresqlsql", "GCP/AWS", "docker", "Selenium", "Bigquery", "Github", "Aider", "Ollama"],
+        "role": "Software-Ingenieur",
+        "color": "#e6830b",
+        "colorTa": "#e6830b80",
+        "description": "Software-Ingenieur, Verwendung moderner Technologien zur Konzeption und Erstellung von KI-basierten Testanwendungen.",
+        "from": "Dezember 2025",
+        "to": "Aktuell"
+      },
       {
         "enterprise": "Aichemydev",
         "logo": "/enterprises_logo/aichemy_logo.webp",
         "uri": "https://aichemy.dev/",
-        "tags": ["VueJs", "ReactJs", "Tornado", "Postgre", "Azur/AWS", "docker", "element ui", "Git", "Github"],
-        "role": "Fullstack Webentwickler",
+        "tags": ["VueJs", "ReactJs", "Tornado", "postgresqlsql", "GCP/AWS", "docker", "Selenium", "Git", "Github"],
+        "role": "Software-Ingenieur",
         "color": "#faaf40",
         "colorTa": "#faaf4080",
-        "description": "Fullstock, Nutzung moderner Technologien, um erstaunliche reaktive Anwendungen zu entwerfen und zu erstellen.",
+        "description": "Software-Ingenieur, Verwendung moderner Technologien zur Konzeption und Erstellung von KI-basierten Testanwendungen.",
         "from": "Januar 2022",
-        "to": "Jetzt"
-      },{
+        "to": "Aktuell"
+      },
+      {
         "enterprise": "Bridge africa",
         "logo": "/enterprises_logo/Bridge_africa.webp",
         "uri": "https://bridgeafrica.com/fr",
-        "tags": ["VueJs", "Laravel", "Postgre", "Mysql", "Trello", "Github", "wordpress"],
-        "role": "Backend-Web & Mobile-Entwickler",
+        "tags": ["VueJs", "Laravel", "postgresql", "Mysql", "Trello", "Github", "wordpress"],
+        "role": "Backend Web & Mobile Entwickler",
         "color": "#32a501",
         "colorTa": "#32a50180",
-        "description": "backend, technischer Leiter von IT-Projekten",
+        "description": "Backend-Entwickler, technischer Leiter für IT-Projekte",
         "from": "September 2021",
-        "to": "Jetzt"
-      }, {
+        "to": "Aktuell"
+      },
+      {
         "enterprise": "Opetel",
         "logo": "/enterprises_logo/opetel.webp",
         "uri": "https://www.opetel.fr/",
-        "tags": [ "Laravel" , "Django" , "VueJs", "NuxtJs", "Php","Python" , "Javascript Es6 +"],
+        "tags": ["Laravel", "Django", "VueJs", "NuxtJs", "Php", "Python", "Javascript Es6 +"],
         "role": "Fullstack-Entwickler",
         "color": "#343536",
         "colorTa": "#34353680",
-        "description": "Fullstack Developer (Manager der IT-Abteilung), verantwortlich für die IT-Ressourcen der opetel-Struktur, zuständig für die Konzeption und Umsetzung von Kundenanwendungen und -websites ",
+        "description": "Fullstack-Entwickler (IT-Abteilungsleiter), verantwortlich für IT-Ressourcen der Opetel-Struktur, zuständig für die Konzeption und Umsetzung von Kundenanwendungen und Websites",
         "from": "November 2019",
         "to": "August 2021"
-      }, {
+      },
+      {
         "enterprise": "Mveng Engineering",
         "logo": "/enterprises_logo/mveng.webp",
         "uri": "#",
-        "tags": ["Laravel", "php", "vuejs" , "HTML / CSS"],
-        "role": "Fullstack Webentwickler",
+        "tags": ["Laravel", "php", "vuejs", "HTML / CSS"],
+        "role": "Fullstack Web-Entwickler",
         "color": "#9901d0",
         "colorTa": "#9901d080",
-        "description": "Nutzung moderner Technologien, um erstaunliche reaktive Anwendungen zu entwerfen und zu erstellen.",
+        "description": "Verwendung moderner Technologien zur Konzeption und Erstellung erstaunlicher responsiver Anwendungen.",
         "from": "April 2018",
         "to": "Dezember 2020"
-      }, {
+      },
+      {
         "enterprise": "Camsoft Group",
         "logo": "/enterprises_logo/camsoft.webp",
         "uri": "https://www.camsoft-group.com/",
         "tags": ["Php", "Bootstrap", "Javascript", "Adobe Photoshop"],
-        "role": "Front-End-Entwickler",
+        "role": "Frontend-Entwickler",
         "color": "#006fbd",
         "colorTa": "#006fbd80",
-        "description": "Nutzung moderner Technologien, um Webanwendungen zu entwerfen und zu realisieren",
+        "description": "Verwendung moderner Technologien zur Konzeption und Umsetzung von Webanwendungen",
         "from": "März 2017",
         "to": "August 2018"
-      }, {
+      },
+      {
         "enterprise": "Freelance",
         "logo": "/enterprises_logo/freelance.webp",
         "uri": "#",
@@ -96,16 +114,15 @@
         "role": "Freiberufler",
         "color": "#404042",
         "colorTa": "#40404280",
-        "description": "Ständig neue Technologien zu erlernen und skalierbare Anwendungen für Kunden und mich selbst zu erstellen.",
+        "description": "Kontinuierliches Erlernen neuer Technologien und Erstellen skalierbarer Anwendungen für Kunden und mich selbst.",
         "from": "Oktober 2012",
-        "to": "Now"
+        "to": "Aktuell"
       }
     ]
-
   },
   "contact": {
-    "title":"Was kommt als Nächstes?",
-    "introduction": "Was kommt als Nächstes?",
-    "description": " Ich interessiere mich für freiberufliche und Remote-Möglichkeiten - insbesondere für anspruchsvolle oder große Projekte. Wenn Sie jedoch eine andere Anfrage oder Frage haben oder einfach nur Hallo sagen möchten, werde ich mein Bestes tun, um mich bei Ihnen zu melden!"
+    "title": "Was kommt als Nächstes?",
+    "introduction": "Nehmen Sie Kontakt mit mir auf",
+    "description": " Ich interessiere mich für freiberufliche und Remote-Möglichkeiten - insbesondere für ehrgeizige oder großangelegte Projekte. Wenn Sie jedoch andere Anfragen oder Fragen haben oder einfach nur Hallo sagen möchten, werde ich mein Bestes geben, um zu antworten!"
   }
 }
