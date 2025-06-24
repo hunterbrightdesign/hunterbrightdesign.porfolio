@@ -70,8 +70,8 @@ export default {
           github: 'https://github.com/aiguards/statemachine',
           keyword: ['#Test_automation', '#Auto_gen', '#Auto_heal', '#Enhance_coverage'],
           tags: ['Javascript', 'PostgreSQL', 'python', 'FastApi', 'Github', 'Aider', 'Docker', 'Ollama', 'AWS'],
-          description: 'We are a strong technical team comprised of multiple PhDs and Data Science experts. Our founders are established entrepreneurs who have successfully built several products to solve key customer problems. Our people come from top schools like Stanford, Princeton, Johns Hopkins, UT Austin, UC Berkeley, Harvey Mudd, etc. We are comprised of AI experts who are very passionate about solving the problems plaguing testing. We also happen to have several top level chess players in our team attesting to our problem solving capabilities!',
-          shortDescription: 'We are a strong technical team comprised of multiple.....',
+          description: 'aiguards/statemachine is a JavaScript library for creating finite state machines (FSMs). It allows you to define states, transitions, actions, and guards to model complex systems in a clear and organized manner. Useful for user interfaces, games, and workflows.',
+          shortDescription: ' library for modeling complex systems with states, transitions, actions, and guards. Ideal for UIs, games, and workflows.',
         },
         {
           name: 'wring recoder',
