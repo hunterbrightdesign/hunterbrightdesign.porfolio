@@ -44,19 +44,20 @@ export default {
   data() {
     return {
       skills: [
-        { elt: 'Laravel(6 7 8+)', value: '90%', uri: 'https://laravel.com/' },
+        { elt: 'Laravel(6 7 8+)', value: '95%', uri: 'https://laravel.com/' },
         { elt: 'php ', value: '95%', uri: 'https://www.php.org/' },
         { elt: 'Postgresql / Mysql / Sqlite', value: '90%', uri: 'https://www.postgresql.org/' },
         { elt: 'Vue Js', value: '90%', uri: 'https://vuejs.org/' },
         { elt: 'Nuxtjs', value: '90%', uri: 'https://nuxtjs.org/' },
         { elt: 'Javascript Typescript', value: '90%', uri: 'https://www.javascript.com/' },
-        { elt: 'Git / Github ', value: '90%', uri: 'https://github.com/hunterbrightdesign' },
-        { elt: 'Extension chrome', value: '90%', uri: 'https://developer.chrome.com/' },
-        { elt: 'Torbado/Flask', value: '50%', uri: 'https://flask.palletsprojects.com' },
-        { elt: 'Python', value: '50%', uri: 'https://python.org/' },
-        { elt: 'Reactjs', value: '50%', uri: 'https://reactjs.org/' },
+        { elt: 'Git / Github ', value: '95%', uri: 'https://github.com/hunterbrightdesign' },
+        { elt: 'selenium ... ', value: '80%', uri: 'https://www.selenium.dev/' },
+        { elt: 'Extension chrome', value: '95%', uri: 'https://developer.chrome.com/' },
+        { elt: 'FastApi/Flask/Django', value: '95%', uri: 'https://flask.palletsprojects.com' },
+        { elt: 'Python', value: '95%', uri: 'https://python.org/' },
+        { elt: 'Reactjs', value: '70%', uri: 'https://reactjs.org/' },
         { elt: 'Dart (flutter)', value: '40%', uri: 'https://docs.flutter.dev/' },
-        { elt: 'Docker / Kubernetes ', value: '30%', uri: 'https://www.docker.com/' },
+        { elt: 'Docker / AWS / GCP ', value: '70%', uri: 'https://www.docker.com/' },
       ]
     }
   },

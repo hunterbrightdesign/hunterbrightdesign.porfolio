@@ -9,7 +9,7 @@
 export default {
   data () {
     return {
-      mail: 'hunterbrightdesign@gmail.com'
+      mail: 'fokoui-maco@hunter-tech.tech'
     }
   },
 }

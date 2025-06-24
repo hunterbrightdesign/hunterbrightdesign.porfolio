@@ -37,9 +37,10 @@ export default {
         { name: 'ReactJs', uri: 'https://reactjs.org/'},
         {name: 'Python', uri: 'https://www.python.org/'},
         { name: 'Dart (Flutter)', uri: 'https://docs.flutter.dev/'},
-        {name: 'Tornado / Flask', uri: 'https://flask.palletsprojects.com'},
-        { name: 'Docker / Kubernetes ', uri: 'https://www.docker.com/' },
+        {name: 'FastApi / Flask / Django', uri: 'https://flask.palletsprojects.com'},
+        { name: 'Docker / AWS / GCP ', uri: 'https://www.docker.com/' },
         { name: 'Extension chrome', uri: 'https://developer.chrome.com/' },
+        { name: 'Selenium ...', uri: 'https://www.selenium.dev/' },
       ],
     }
   },

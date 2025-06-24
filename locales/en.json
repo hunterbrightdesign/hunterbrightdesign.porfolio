@@ -9,10 +9,10 @@
   "cv":"/cv_fokoui_en.pdf",
   "home": {
     "introduction": "Hi, my name is",
-    "description": "I build web & mobile app.",
+    "description": "software engineer.",
     "me": "I'm a",
     "profession": "software engineer",
-    "text-1": "specializing in designing and building scalable and maintainable solutions for web & mobile (...) for more",
+    "text-1": "specializing in designing and building scalable and maintainable solutions and AI-based solutions for web & mobile (...) for more",
     "text-2": "tools both for individuals and for small or large businesses with distinct sizes.",
     "evidence-1": "innovative",
     "evidence-2": "intuitive",
@@ -22,7 +22,7 @@
   "about": {
     "title":"Who is this guy",
     "introduction": "Hello!, My name is",
-    "description": " am a software Engineer and occasionally a designer. My passion for the web dates from my first year of university in 2012 when I discovered javascript and php.",
+    "description": " am a software Engineer, CEO of hunter-tech and occasionally a designer. My passion for the IT dates from my first year of university in 2012 when I discovered javascript and php.",
     "text-1": "Since then, I have not hesitated to discover, design and build ultra modern and scalable platforms and applications through the multiple technologies that make up my profile.",
     "text-2": "Among which the main ones are :",
     "evidence-1": "innovative",
@@ -38,10 +38,10 @@
         "logo": "/enterprises_logo/aichemy_logo.webp",
         "uri": "https://aichemy.dev/",
         "tags": ["VueJs", "ReactJs", "Tornado", "Postgre", "Azur/AWS", "docker", "element ui", "Git", "Github"],
-        "role": "Fullstack Web developper",
+        "role": "software engineerr",
         "color": "#faaf40",
         "colorTa": "#faaf4080",
-        "description": "Fullstack, Using modern technologies to design and create amazing responsive applications.",
+        "description": "software engineer, Using modern technologies to design and create AI-based test application.",
         "from": "January 2022",
         "to": "Now"
       },{
